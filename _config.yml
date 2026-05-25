@@ -1,0 +1,38 @@
+# Jekyll configuration for soyda.github.io
+# Minimal, modern static site with dark mode support
+
+title: Soyda
+description: A clean digital space for projects and ideas
+url: "https://soyda.github.io"
+baseurl: ""
+
+# Theme
+theme: minima
+color_scheme: 
+  - "#1a1a2e"
+  - "#16213e"
+  - "#e0e0e0"
+  - "#a0a0a0"
+  - "#00d4ff"
+  - "#00b8d4"
+  - "#2a2a4a"
+  - "#1e2a4a"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from build
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
