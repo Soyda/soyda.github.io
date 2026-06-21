@@ -1,19 +1,39 @@
 // =============================================
 // Soyda Portfolio — Theme Switcher
-// Toggles between light/dark variants, persists choice
-// Respects prefers-color-scheme as initial preference
+// Cycles through 12 terminal-style themes
+// Respects prefers-color-scheme on first load
+// Saves preference to localStorage
 // =============================================
 
 (function () {
-  const THEMES = ['theme-gray', 'theme-navy-light', 'theme-navy-dark'];
+  const THEMES = [
+    'theme-gray',       // gray light (default)
+    'theme-dark',       // dark terminal green
+    'theme-blue',       // blue light
+    'theme-blue-dark',  // dark navy blue
+    'theme-emerald',    // emerald light
+    'theme-emerald-dark', // dark terminal green
+    'theme-violet',     // violet light
+    'theme-violet-dark',  // dark purple
+    'theme-amber',      // amber light
+    'theme-amber-dark',   // dark terminal amber
+    'theme-rose',       // rose light
+    'theme-rose-dark',    // dark terminal pink
+  ];
   const STORAGE_KEY = 'soyda-theme';
   const BTN_ID = 'theme-switcher';
 
   function getPreferred() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'theme-gray-dark';
+      return 'theme-dark'; // default to terminal green on dark mode
     }
     return 'theme-gray'; // default light
+  }
+
+  function applyTheme(theme) {
+    document.body.classList.remove(...THEMES);
+    document.body.classList.add(theme);
+    localStorage.setItem(STORAGE_KEY, theme);
   }
 
   function init() {
@@ -21,33 +41,24 @@
     let currentTheme = saved || getPreferred();
 
     // Ensure at least one theme class is active
+    if (!document.body.classList.contains(currentTheme)) {
+      currentTheme = getPreferred();
+    }
+
     document.body.classList.add(currentTheme);
 
     const btn = document.getElementById(BTN_ID);
     if (!btn) return;
 
     function cycle() {
-      // Determine next theme in the light/dark sequence
-      const idx = THEMES.indexOf(currentTheme);
-      const nextLight = THEMES[(idx + 1) % THEMES.length];
-      const nextDark = THEMES[((idx + 2) % THEMES.length) + (currentTheme.includes('light') || currentTheme === 'theme-gray' ? -1 : -2)] || THEMES[0];
-
-      // Simplified: just cycle through all 4 known themes
-      const ALL_THEMES = ['theme-gray', 'theme-gray-dark', 'theme-navy-light', 'theme-navy-dark'];
-      let ci = ALL_THEMES.indexOf(currentTheme);
-      if (ci === -1) ci = 0; // fallback
-      currentTheme = ALL_THEMES[(ci + 1) % ALL_THEMES.length];
-
-      document.body.classList.remove(...ALL_THEMES);
-      document.body.classList.add(currentTheme);
-      localStorage.setItem(STORAGE_KEY, currentTheme);
+      let ci = THEMES.indexOf(currentTheme);
+      if (ci === -1) ci = 0;
+      currentTheme = THEMES[(ci + 1) % THEMES.length];
+      applyTheme(currentTheme);
     }
 
     btn.addEventListener('click', cycle);
-
-    // Keyboard accessibility
-    btn.setAttribute('aria-label', 'Cycle through themes');
-    btn.setAttribute('role', 'button');
+    btn.setAttribute('aria-label', 'Cycle through themes (' + THEMES.length + ')');
   }
 
   if (document.readyState === 'loading') {

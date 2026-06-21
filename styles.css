@@ -1,79 +1,282 @@
 /* =============================================
-   Soyda Portfolio — Styles
-   Minimal, theme-aware, accessible CSS
+   Soyda Portfolio — Terminal Theme System
+   Raw, terminal aesthetic. Monospace everywhere.
+   Themes: gray(default), dark, blue, emerald, violet, amber, rose
    ============================================= */
 
-/* ---------- Design Tokens ---------- */
+/* ---------- Design Tokens (all override these) ---------- */
 :root {
-  /* Light / Gray (default) */
-  --bg:          #f4f5f7;
-  --surface:     #ffffff;
-  --text:        #1a1a2e;
-  --text-muted:  #6b7280;
-  --accent:      #4f46e5;
-  --accent-hover:#4338ca;
-  --border:      #e5e7eb;
-  --tag-bg:      rgba(79,70,229,.1);
+  --font-main: 'Courier New', 'Lucida Console', 'SF Mono', 'Fira Code', monospace;
+  --font-size: 14px;
+  --font-mono: 'Courier New', 'Lucida Console', 'SF Mono', monospace;
 
-  --nav-bg:      rgba(255,255,255,.85);
-  --shadow:      0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.04);
-  --radius:      10px;
+  /* Spacing */
+  --space-xs: .25rem;
+  --space-sm: .5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-xxl: 4rem;
 
-  --transition:  .3s ease;
+  /* Border radius */
+  --radius: 0px;          /* terminal = no rounding */
+  --radius-sm: 3px;
+  --radius-lg: 6px;
+
+  /* Transition speed */
+  --transition: .25s ease-in-out;
 }
 
-/* Dark / Gray */
-.theme-gray-dark {
-  --bg:          #111827;
-  --surface:     #1e293b;
-  --text:        #e5e7eb;
-  --text-muted:  #9ca3af;
-  --accent:      #818cf8;
-  --accent-hover:#6366f1;
-  --border:      #374151;
-  --tag-bg:      rgba(129,140,248,.15);
-
-  --nav-bg:      rgba(17,24,39,.9);
-  --shadow:      0 1px 3px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.15);
+/* =============================================
+   THEME 1: GRAY (default) — clean, professional
+   ============================================= */
+.theme-gray {
+  --bg:          #f0f0f0;
+  --bg-alt:      #e8e8e8;
+  --surface:     #ffffff;
+  --text:        #1a1a1a;
+  --text-muted:  #555555;
+  --accent:      #2c2c2c;
+  --accent-hover:#000000;
+  --border:      #d0d0d0;
+  --tag-bg:      rgba(0,0,0,.08);
+  --highlight:   rgba(0,0,0,.04);
+  --nav-bg:      rgba(255,255,255,.95);
+  --shadow:      0 1px 3px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  --code-bg:     #f5f5f5;
+  --scrollbar:   #c0c0c0;
 }
 
-/* Light / Navy */
-.theme-navy-light {
-  --bg:          #eff6ff;
+/* =============================================
+   THEME 2: DARK — terminal hacker style
+   ============================================= */
+.theme-dark {
+  --bg:          #0a0e14;
+  --bg-alt:      #0f1520;
+  --surface:     #0d1117;
+  --text:        #c9d1d9;
+  --text-muted:  #8b949e;
+  --accent:      #39d353;   /* terminal green */
+  --accent-hover:#56d364;
+  --border:      #21262d;
+  --tag-bg:      rgba(57,211,83,.12);
+  --highlight:   rgba(57,211,83,.06);
+  --nav-bg:      rgba(10,14,20,.95);
+  --shadow:      0 1px 3px rgba(0,0,0,.4), 0 4px 8px rgba(0,0,0,.2);
+  --code-bg:     #161b22;
+  --scrollbar:   #21262d;
+}
+
+/* =============================================
+   THEME 3: BLUE — shades of blue
+   ============================================= */
+.theme-blue {
+  --bg:          #eef4ff;
+  --bg-alt:      #e3ecfa;
   --surface:     #ffffff;
-  --text:        #1e293b;
-  --text-muted:  #475569;
-  --accent:      #0369a1;
-  --accent-hover:#075985;
+  --text:        #0a1929;
+  --text-muted:  #3b5bb8;
+  --accent:      #1d4ed8;   /* deep blue */
+  --accent-hover:#1e40af;
   --border:      #bfdbfe;
-  --tag-bg:      rgba(3,105,161,.1);
-
-  --nav-bg:      rgba(255,255,255,.85);
-  --shadow:      0 1px 3px rgba(3,105,161,.08), 0 4px 12px rgba(3,105,161,.04);
+  --tag-bg:      rgba(29,78,216,.1);
+  --highlight:   rgba(29,78,216,.05);
+  --nav-bg:      rgba(255,255,255,.95);
+  --shadow:      0 1px 3px rgba(29,78,216,.1), 0 4px 8px rgba(29,78,216,.06);
+  --code-bg:     #eff6ff;
+  --scrollbar:   #bfdbfe;
 }
 
-/* Dark / Navy */
-.theme-navy-dark {
-  --bg:          #0c1a2e;
-  --surface:     #172554;
-  --text:        #e2e8f0;
-  --text-muted:  #94a3b8;
-  --accent:      #38bdf8;
-  --accent-hover:#0ea5e9;
+/* =============================================
+   THEME 4: DARK BLUE — deep navy
+   ============================================= */
+.theme-blue-dark {
+  --bg:          #020617;
+  --bg-alt:      #0c1929;
+  --surface:     #0f172a;
+  --text:        #dbeafe;
+  --text-muted:  #60a5fa;
+  --accent:      #3b82f6;   /* bright blue */
+  --accent-hover:#60a5fa;
   --border:      #1e3a5f;
-  --tag-bg:      rgba(56,189,248,.15);
-
-  --nav-bg:      rgba(12,26,46,.9);
-  --shadow:      0 1px 3px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.15);
+  --tag-bg:      rgba(59,130,246,.15);
+  --highlight:   rgba(59,130,246,.08);
+  --nav-bg:      rgba(2,6,23,.95);
+  --shadow:      0 1px 3px rgba(0,0,0,.5), 0 4px 8px rgba(59,130,246,.1);
+  --code-bg:     #1e293b;
+  --scrollbar:   #1e3a5f;
 }
 
-/* ---------- Reset & Base ---------- */
+/* =============================================
+   THEME 5: EMERALD — green shades
+   ============================================= */
+.theme-emerald {
+  --bg:          #ecfdf5;
+  --bg-alt:      #d1fae5;
+  --surface:     #ffffff;
+  --text:        #022c22;
+  --text-muted:  #047857;
+  --accent:      #059669;   /* emerald */
+  --accent-hover:#047857;
+  --border:      #a7f3d0;
+  --tag-bg:      rgba(5,150,105,.1);
+  --highlight:   rgba(5,150,105,.05);
+  --nav-bg:      rgba(255,255,255,.95);
+  --shadow:      0 1px 3px rgba(5,150,105,.1), 0 4px 8px rgba(5,150,105,.06);
+  --code-bg:     #ecfdf5;
+  --scrollbar:   #a7f3d0;
+}
+
+/* =============================================
+   THEME 6: DARK EMERALD — terminal green
+   ============================================= */
+.theme-emerald-dark {
+  --bg:          #052e16;
+  --bg-alt:      #0a3d22;
+  --surface:     #064e3b;
+  --text:        #d1fae5;
+  --text-muted:  #34d399;
+  --accent:      #34d399;   /* bright green */
+  --accent-hover:#6ee7b7;
+  --border:      #065f46;
+  --tag-bg:      rgba(52,211,153,.15);
+  --highlight:   rgba(52,211,153,.08);
+  --nav-bg:      rgba(5,46,22,.95);
+  --shadow:      0 1px 3px rgba(0,0,0,.5), 0 4px 8px rgba(52,211,153,.1);
+  --code-bg:     #064e3b;
+  --scrollbar:   #065f46;
+}
+
+/* =============================================
+   THEME 7: VIOLET — purple shades
+   ============================================= */
+.theme-violet {
+  --bg:          #f5f3ff;
+  --bg-alt:      #ede9fe;
+  --surface:     #ffffff;
+  --text:        #1e1b4b;
+  --text-muted:  #7c3aed;
+  --accent:      #6d28d9;   /* deep violet */
+  --accent-hover:#5b21b6;
+  --border:      #ddd6fe;
+  --tag-bg:      rgba(109,40,217,.1);
+  --highlight:   rgba(109,40,217,.05);
+  --nav-bg:      rgba(255,255,255,.95);
+  --shadow:      0 1px 3px rgba(109,40,217,.1), 0 4px 8px rgba(109,40,217,.06);
+  --code-bg:     #f5f3ff;
+  --scrollbar:   #ddd6fe;
+}
+
+/* =============================================
+   THEME 8: DARK VIOLET — terminal purple
+   ============================================= */
+.theme-violet-dark {
+  --bg:          #1a0b2e;
+  --bg-alt:      #231542;
+  --surface:     #1e1537;
+  --text:        #e9d5ff;
+  --text-muted:  #c084fc;
+  --accent:      #a855f7;   /* bright purple */
+  --accent-hover:#c084fc;
+  --border:      #3b1a6e;
+  --tag-bg:      rgba(168,85,247,.15);
+  --highlight:   rgba(168,85,247,.08);
+  --nav-bg:      rgba(26,11,46,.95);
+  --shadow:      0 1px 3px rgba(0,0,0,.5), 0 4px 8px rgba(168,85,247,.1);
+  --code-bg:     #1e1537;
+  --scrollbar:   #3b1a6e;
+}
+
+/* =============================================
+   THEME 9: AMBER — warm gold tones
+   ============================================= */
+.theme-amber {
+  --bg:          #fffbeb;
+  --bg-alt:      #fef3c7;
+  --surface:     #ffffff;
+  --text:        #451a03;
+  --text-muted:  #b45309;
+  --accent:      #d97706;   /* amber */
+  --accent-hover:#b45309;
+  --border:      #fde68a;
+  --tag-bg:      rgba(217,119,6,.1);
+  --highlight:   rgba(217,119,6,.05);
+  --nav-bg:      rgba(255,255,255,.95);
+  --shadow:      0 1px 3px rgba(217,119,6,.1), 0 4px 8px rgba(217,119,6,.06);
+  --code-bg:     #fffbeb;
+  --scrollbar:   #fde68a;
+}
+
+/* =============================================
+   THEME 10: DARK AMBER — terminal amber
+   ============================================= */
+.theme-amber-dark {
+  --bg:          #1c1407;
+  --bg-alt:      #2d200e;
+  --surface:     #362915;
+  --text:       #fef3c7;
+  --text-muted: #fbbf24;
+  --accent:      #f59e0b;   /* bright amber */
+  --accent-hover:#fbbf24;
+  --border:      #92400e;
+  --tag-bg:      rgba(245,158,11,.15);
+  --highlight:   rgba(245,158,11,.08);
+  --nav-bg:      rgba(28,20,7,.95);
+  --shadow:      0 1px 3px rgba(0,0,0,.5), 0 4px 8px rgba(245,158,11,.1);
+  --code-bg:     #362915;
+  --scrollbar:   #92400e;
+}
+
+/* =============================================
+   THEME 11: ROSE — pink/red shades
+   ============================================= */
+.theme-rose {
+  --bg:          #fff1f2;
+  --bg-alt:      #ffe4e6;
+  --surface:     #ffffff;
+  --text:        #1a0508;
+  --text-muted:  #be123c;
+  --accent:      #e11d48;   /* rose */
+  --accent-hover:#be123c;
+  --border:      #fecdd3;
+  --tag-bg:      rgba(225,29,72,.08);
+  --highlight:   rgba(225,29,72,.04);
+  --nav-bg:      rgba(255,255,255,.95);
+  --shadow:      0 1px 3px rgba(225,29,72,.1), 0 4px 8px rgba(225,29,72,.06);
+  --code-bg:     #fff1f2;
+  --scrollbar:   #fecdd3;
+}
+
+/* =============================================
+   THEME 12: DARK ROSE — terminal pink
+   ============================================= */
+.theme-rose-dark {
+  --bg:          #1a0508;
+  --bg-alt:      #2d0f15;
+  --surface:     #3b0a17;
+  --text:       #ffe4e6;
+  --text-muted: #fb7185;
+  --accent:      #fb7185;   /* bright pink */
+  --accent-hover:#fda4af;
+  --border:      #9d174d;
+  --tag-bg:      rgba(251,113,133,.15);
+  --highlight:   rgba(251,113,133,.08);
+  --nav-bg:      rgba(26,5,8,.95);
+  --shadow:      0 1px 3px rgba(0,0,0,.5), 0 4px 8px rgba(251,113,133,.1);
+  --code-bg:     #3b0a17;
+  --scrollbar:   #9d174d;
+}
+
+/* =============================================
+   BASE STYLES — Terminal Aesthetic
+   ============================================= */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; font-size: var(--font-size); }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-family: var(--font-main);
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
@@ -81,147 +284,208 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-weight: normal;
+}
+
+/* Monospace for code elements */
+code, pre, .code-block {
+  font-family: 'Courier New', 'SF Mono', 'Fira Code', monospace;
 }
 
 a { color: var(--accent); text-decoration: none; transition: color var(--transition); }
-a:hover { color: var(--accent-hover); }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
 
 img { max-width: 100%; height: auto; }
 
 .container { width: 90%; max-width: 960px; margin: 0 auto; }
 
-/* ---------- Navbar ---------- */
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-alt); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 4px; }
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
 .navbar {
   position: sticky; top: 0; z-index: 50;
   background: var(--nav-bg);
-  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   transition: background var(--transition), border-color var(--transition);
 }
 
 .nav-inner {
   display: flex; align-items: center; justify-content: space-between;
-  padding: .75rem 0;
+  padding: var(--space-md) 0;
 }
 
-.logo { font-size: 1.4rem; font-weight: 700; color: var(--text); }
+.logo { font-size: 1.4rem; font-weight: bold; color: var(--text); text-decoration: none; letter-spacing: -1px; }
+.logo:hover { text-decoration: none; }
 .logo .dot { color: var(--accent); }
 
-.nav-links { list-style: none; display: flex; gap: 1.5rem; align-items: center; }
-.nav-links a { color: var(--text-muted); font-weight: 500; font-size: .95rem; padding: .25rem 0; border-bottom: 2px solid transparent; transition: color var(--transition), border-color var(--transition); }
-.nav-links a:hover, .nav-links a.active { color: var(--accent); border-color: var(--accent); }
+.nav-links { list-style: none; display: flex; gap: var(--space-lg); align-items: center; }
+.nav-links a { color: var(--text-muted); font-weight: normal; font-size: .9rem; padding: var(--space-xs) 0; border-bottom: 2px solid transparent; transition: all var(--transition); text-decoration: none; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 
-/* ---------- Buttons ---------- */
+/* =============================================
+   BUTTONS — Terminal style (square edges)
+   ============================================= */
 .btn {
-  display: inline-block; padding: .6rem 1.4rem; border-radius: var(--radius);
-  font-weight: 600; font-size: .95rem; cursor: pointer;
-  transition: background var(--transition), color var(--transition), transform .15s ease, box-shadow var(--transition);
+  display: inline-block; padding: var(--space-sm) var(--space-md); border-radius: var(--radius);
+  font-weight: normal; font-size: .9rem; cursor: pointer;
+  transition: all var(--transition); text-decoration: none;
 }
 
 .btn-primary { background: var(--accent); color: #fff; border: 2px solid var(--accent); }
-.btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); transform: translateY(-2px); box-shadow: var(--shadow); }
+.btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); transform: translateY(-2px); box-shadow: var(--shadow); text-decoration: none; }
 
 .btn-outline { border: 2px solid var(--border); color: var(--text); background: transparent; }
-.btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); text-decoration: none; }
 
-/* ---------- Hero ---------- */
-.hero { padding: 4rem 0 3rem; text-align: center; }
+/* =============================================
+   HERO — Terminal welcome screen
+   ============================================= */
+.hero { padding: var(--space-xxl) 0 var(--space-xl); text-align: center; border-bottom: 1px solid var(--border); }
 
-.greeting { display: block; font-size: 1rem; color: var(--accent); font-weight: 600; margin-bottom: .5rem; letter-spacing: .02em; }
+.greeting { display: block; font-size: .9rem; color: var(--accent); font-weight: normal; margin-bottom: var(--space-sm); letter-spacing: 1px; }
+.greeting::before { content: '>'; color: var(--accent-hover); margin-right: 4px; }
 
-.hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem; color: var(--text); }
+.hero h1 { font-size: clamp(1.6rem, 5vw, 2.8rem); font-weight: bold; line-height: 1.3; margin-bottom: var(--space-md); color: var(--text); letter-spacing: -2px; }
+.hero h1::after { content: '_'; animation: blink 1s step-end infinite; display: inline-block; color: var(--accent); margin-left: 4px; }
 
-.hero-subtitle { max-width: 640px; margin: 0 auto 1.5rem; color: var(--text-muted); font-size: 1.05rem; }
-
-.hero-actions { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
-
-/* ---------- Tech Stack ---------- */
-.tech-stack-section { text-align: center; padding: 2rem 0; }
-.section-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; color: var(--text); text-align: center; }
-
-.tech-grid { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; }
-.tech-tag code {
-  display: inline-block; padding: .35rem .85rem; border-radius: 999px;
-  background: var(--tag-bg); color: var(--accent); font-size: .85rem; font-weight: 600;
-  transition: background var(--transition), transform .15s ease;
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
-.tech-tag code:hover { transform: scale(1.07); }
 
-/* ---------- Projects ---------- */
-.projects-section { padding: 2rem 0 3rem; }
+.hero-subtitle { max-width: 640px; margin: 0 auto var(--space-lg); color: var(--text-muted); font-size: .95rem; line-height: 1.8; }
 
-.projects-grid { display: grid; gap: 1.25rem; margin-bottom: 2rem; }
+.hero-actions { display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap; }
+
+/* =============================================
+   TECH STACK — Terminal tags
+   ============================================= */
+.tech-stack-section { text-align: left; padding: var(--space-xl) 0; border-bottom: 1px solid var(--border); }
+.section-title { font-size: 1.2rem; font-weight: bold; margin-bottom: var(--space-md); color: var(--text); text-transform: uppercase; letter-spacing: 2px; }
+.section-title::before { content: '[ '; color: var(--accent); }
+.section-title::after { content: ' ]'; color: var(--accent); }
+
+.tech-grid { display: flex; gap: var(--space-sm); justify-content: center; flex-wrap: wrap; }
+.tech-tag code {
+  display: inline-block; padding: var(--space-xs) var(--space-md); border-radius: 0;
+  background: var(--tag-bg); color: var(--accent); font-size: .85rem; font-weight: normal;
+  transition: all var(--transition);
+}
+.tech-tag code:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+
+/* =============================================
+   PROJECTS — Terminal file listing style
+   ============================================= */
+.projects-section { padding: var(--space-xl) 0; border-bottom: 1px solid var(--border); }
+
+.projects-grid { display: grid; gap: var(--space-md); margin-bottom: var(--space-lg); }
 
 .project-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 1.25rem 1.4rem; box-shadow: var(--shadow);
-  transition: transform .2s ease, box-shadow var(--transition), border-color var(--transition);
+  padding: var(--space-md) var(--space-lg); box-shadow: var(--shadow);
+  transition: all var(--transition);
 }
-.project-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
+.project-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,.15); border-color: var(--accent); }
 
-.card-header { display: flex; align-items: center; gap: .6rem; margin-bottom: .5rem; }
-.repo-badge { display: inline-flex; align-items: center; gap: .25rem; font-size: .78rem; color: var(--text-muted); font-weight: 500; }
+.card-header { display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm); font-size: .85rem; }
+.repo-badge { display: inline-flex; align-items: center; gap: 4px; color: var(--text-muted); font-weight: normal; }
 .repo-badge svg { opacity: .6; }
 
-.card-title-link { font-size: 1.05rem; font-weight: 700; color: var(--accent); border-bottom: 1px solid transparent; }
-.card-title-link:hover { border-color: var(--accent-hover); }
+.card-title-link { font-size: 1.05rem; font-weight: bold; color: var(--accent); border-bottom: 1px solid transparent; text-decoration: none; }
+.card-title-link:hover { border-color: var(--accent-hover); text-decoration: underline; }
 
-.project-card p { font-size: .92rem; color: var(--text-muted); margin-bottom: .75rem; }
+.project-card p { color: var(--text-muted); font-size: .9rem; margin-bottom: var(--space-sm); line-height: 1.7; }
 
-.project-footer { display: flex; align-items: center; gap: .5rem; font-size: .8rem; color: var(--text-muted); }
+.project-footer { display: flex; align-items: center; gap: var(--space-sm); font-size: .8rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: var(--space-sm); margin-top: var(--space-sm); }
 .language-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--dot-color, #6e7681); display: inline-block; }
-.lang-name { font-weight: 500; }
+.lang-name { font-weight: normal; }
 .spacer { flex: 1; }
 
-.more-repos { text-align: center; padding-top: 1rem; }
-.more-repos h3 { font-size: 1.1rem; margin-bottom: .75rem; color: var(--text); }
+.more-repos { text-align: center; padding-top: var(--space-md); }
+.more-repos h3 { font-size: 1rem; margin-bottom: var(--space-md); color: var(--text); text-transform: uppercase; letter-spacing: 2px; }
 
-/* ---------- About Preview ---------- */
-.about-preview-section { padding: 2rem 0; }
+/* =============================================
+   ABOUT PREVIEW — Terminal box
+   ============================================= */
+.about-preview-section { padding: var(--space-xl) 0; border-bottom: 1px solid var(--border); }
 .about-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 2rem; text-align: center; box-shadow: var(--shadow); transition: background var(--transition), border-color var(--transition);
+  padding: var(--space-xl); text-align: left; box-shadow: var(--shadow); transition: all var(--transition);
 }
-.about-card h2 { font-size: 1.5rem; margin-bottom: .75rem; color: var(--text); }
-.about-card p { color: var(--text-muted); margin-bottom: 1rem; max-width: 560px; margin-left: auto; margin-right: auto; }
+.about-card::before { content: '>>> '; color: var(--accent); font-weight: bold; }
+.about-card h2 { font-size: 1.3rem; margin-bottom: var(--space-md); color: var(--text); text-transform: uppercase; letter-spacing: 2px; }
+.about-card p { color: var(--text-muted); margin-bottom: var(--space-md); max-width: 560px; line-height: 1.8; }
 
-/* ---------- Contact ---------- */
-.contact-section { padding: 2rem 0 3rem; text-align: center; }
-.contact-text { color: var(--text-muted); margin-bottom: 1rem; }
-.contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+/* =============================================
+   CONTACT — Terminal prompt style
+   ============================================= */
+.contact-section { padding: var(--space-xl) 0; text-align: center; border-bottom: 1px solid var(--border); }
+.contact-text { color: var(--text-muted); margin-bottom: var(--space-md); line-height: 1.8; }
+.contact-links { display: flex; gap: var(--space-lg); justify-content: center; flex-wrap: wrap; }
 
-/* ---------- About Page ---------- */
-.page-content { padding-top: 2rem; }
-.page-header { text-align: center; padding: 3rem 0 2rem; }
-.page-header h1 { font-size: 2.2rem; font-weight: 800; color: var(--text); margin-bottom: .4rem; }
-.subtitle { color: var(--text-muted); font-size: 1.05rem; }
+.contact-link {
+  display: inline-block; padding: var(--space-sm) var(--space-md); border-radius: var(--radius);
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); text-decoration: none;
+  font-size: .9rem; transition: all var(--transition);
+}
+.contact-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); text-decoration: none; }
 
+/* =============================================
+   ABOUT PAGE — Terminal session style
+   ============================================= */
+.page-content { padding-top: var(--space-xl); }
+.page-header { text-align: center; padding: var(--space-xxl) 0 var(--space-xl); border-bottom: 1px solid var(--border); }
+.page-header h1 { font-size: 2rem; font-weight: bold; color: var(--text); margin-bottom: var(--space-sm); letter-spacing: -2px; }
+.page-header h1::after { content: '_'; animation: blink 1s step-end infinite; display: inline-block; color: var(--accent); margin-left: 4px; }
+.subtitle { color: var(--text-muted); font-size: .95rem; }
+
+.about-sections { padding: var(--space-xl) 0; }
 .about-block {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 1.5rem 1.75rem; margin-bottom: 1.25rem; box-shadow: var(--shadow);
-  transition: background var(--transition), border-color var(--transition);
+  padding: var(--space-lg); margin-bottom: var(--space-md); box-shadow: var(--shadow); transition: all var(--transition);
 }
-.about-block h2 { font-size: 1.2rem; margin-bottom: .6rem; color: var(--text); }
-.about-block p { color: var(--text-muted); font-size: .95rem; }
+.about-block::before { content: '$ '; color: var(--accent); font-weight: bold; }
+.about-block h2 { font-size: 1.1rem; margin-bottom: var(--space-sm); color: var(--text); text-transform: uppercase; letter-spacing: 2px; display: inline; }
+.about-block p { color: var(--text-muted); font-size: .9rem; line-height: 1.8; margin-top: var(--space-sm); }
 
-.skills-list { list-style: none; padding: 0; }
-.skills-list li { padding: .4rem 0; color: var(--text-muted); font-size: .95rem; border-bottom: 1px solid var(--border); }
+.skills-list { list-style: none; padding: 0; margin-top: var(--space-sm); }
+.skills-list li { padding: var(--space-xs) 0; color: var(--text-muted); font-size: .9rem; border-bottom: 1px solid var(--border); line-height: 1.8; }
 .skills-list li:last-child { border-bottom: none; }
 
-/* ---------- Theme Switcher ---------- */
+/* =============================================
+   THEME SWITCHER — Terminal button
+   ============================================= */
 .theme-btn {
-  background: var(--surface); color: var(--text); border: 1px solid var(--border);
-  padding: .4rem .9rem; border-radius: var(--radius); font-weight: 600; cursor: pointer;
-  transition: all var(--transition); font-size: .85rem;
+  background: var(--surface); color: var(--text); border: 2px solid var(--border);
+  padding: var(--space-xs) var(--space-sm); border-radius: var(--radius); font-weight: normal; cursor: pointer;
+  transition: all var(--transition); font-size: .85rem; font-family: inherit;
 }
 .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
 
-/* ---------- Footer ---------- */
-.site-footer { margin-top: auto; padding: 1.5rem 0; text-align: center; border-top: 1px solid var(--border); font-size: .85rem; color: var(--text-muted); transition: border-color var(--transition); }
-.footer-inner a { font-weight: 500; }
+/* =============================================
+   FOOTER — Terminal status bar
+   ============================================= */
+.site-footer { margin-top: auto; padding: var(--space-md) 0; text-align: center; border-top: 1px solid var(--border); font-size: .8rem; color: var(--text-muted); transition: all var(--transition); }
+.footer-inner a { font-weight: normal; text-decoration: none; }
+.footer-inner a:hover { text-decoration: underline; color: var(--accent); }
 
-/* ---------- Responsive ---------- */
+/* =============================================
+   RESPONSIVE
+   ============================================= */
 @media (max-width: 640px) {
-  .hero { padding: 2.5rem 0 2rem; }
-  .projects-grid, .about-block { padding: 1rem; }
+  .hero { padding: var(--space-xl) 0 var(--space-lg); }
+  .projects-grid, .about-block { padding: var(--space-md); }
+  .nav-links { gap: var(--space-md); font-size: .85rem; }
+  .logo { font-size: 1.2rem; }
 }
