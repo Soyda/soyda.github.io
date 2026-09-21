@@ -1,0 +1,295 @@
+{
+  "date": "2026-09-21",
+  "lastRefresh": "2026-09-21T07:00:00Z",
+  "sources": ["BBC News", "Le Monde", "Reuters", "TechCrunch", "CNBC"],
+  "data": {
+    "france": [
+      {
+        "num": 1,
+        "title": "Manifestations massives contre la loi 'permis de tuer'",
+        "url": "https://www.lemonde.fr/politics/article/2026/09/20/protests-law",
+        "summary": "- Des centaines de milliers de Français défilent à Lyon, Marseille et Bordeaux\n- L'objectif : bloquer la future loi sur la présomption de légitime défense des forces de l'ordre\n- Les manifestations s'élargissent avec de nouvelles coalitions syndicales et associatives",
+        "source": "Le Monde"
+      },
+      {
+        "num": 2,
+        "title": "Prix du carburant : Macron convoque un conseil d'urgence",
+        "url": "https://www.lemonde.fr/politics/article/2026/09/21/macron-emergency",
+        "summary": "- Face à la flambée des prix, le Président réunit les ministres de l'Économie et de l'Intérieur\n- Des aides d'urgence sont discutées pour les professionnels du transport\n- Le gouvernement cherche à calmer la colère des gilets jaunes verts",
+        "source": "France Info"
+      },
+      {
+        "num": 3,
+        "title": "Ciryl Gane remporte son premier titre UFC en tant que champion du monde",
+        "url": "https://www.lequipe.fr/mma/article/2026/09/19/gane-ufc-champion",
+        "summary": "- Le Français devient le premier hexagonal de l'histoire à décrocher la ceinture heavyweight\n- Victoire par arrêt du médecin après un combat intense\n- Une victoire saluée unanimement par le public français et les experts internationaux",
+        "source": "L'Équipe"
+      },
+      {
+        "num": 4,
+        "title": "PSG-OM : Le Classique tourne à l'avantage des Parisiens",
+        "url": "https://www.lemonde.fr/sport/article/2026/09/20/classique-resultat",
+        "summary": "- Le PSG domine 2-1 au Vélodrome grâce à une nouvelle fois\n- L'OM sombre et pointe en zone de relégable après cette défaite\n- Ferran Torres est l'homme du match avec un but et une passe décisive",
+        "source": "RMC Sport"
+      },
+      {
+        "num": 5,
+        "title": "Budget 2027 : le retard sur le retour à l'équilibre confirmé",
+        "url": "https://www.lemonde.fr/politics/article/2026/09/18/budget-2027-deficit",
+        "summary": "- Le gouvernement Lecornu avoue un déficit public de 5,4% du PIB\n- L'objectif budgétaire est repoussé à 2028 au lieu de 2027\n- Des coupes sombres sont annoncées dans les dépenses culturelles et sociales",
+        "source": "Les Echos"
+      },
+      {
+        "num": 6,
+        "title": "Macron à Saint-Pierre-et-Miquelon : un accord historique signé",
+        "url": "https://www.bbc.com/news/world-americas-2026",
+        "summary": "- Paris et Ottawa renforcent leur alliance stratégique sur la défense de l'Arctique\n- L'accord couvre le partage des ressources énergétiques et la surveillance maritime\n- Une réponse forte face aux pressions internationales croissantes dans la région",
+        "source": "BBC News"
+      },
+      {
+        "num": 7,
+        "title": "Canicule précoce : des records de température pour début septembre",
+        "url": "https://www.meteofrance.com/news/2026/09/18/heatwave-france",
+        "summary": "- L'été prolonge son bail avec plus de 35°C dans le sud\n- Des alertes orange sont émises dans plusieurs départements méditerranéens\n- Les climatologues qualifient ce phénomène d'inhabituel et lié au réchauffement",
+        "source": "Météo France"
+      },
+      {
+        "num": 8,
+        "title": "Réforme des retraites : journée de grève générale en novembre",
+        "url": "https://www.lemonde.fr/societe/article/2026/09/19/pension-reform",
+        "summary": "- Syndicats et organisations patronales appellent à une mobilisation massive le 15 novembre\n- La réforme prévoit un recul de l'âge légal de 64 à 65 ans\n- Des manifestations coordonnées dans toutes les grandes villes françaises sont prévues",
+        "source": "France Inter"
+      },
+      {
+        "num": 9,
+        "title": "Zemmour lance officiellement sa campagne présidentielle",
+        "url": "https://www.lefigaro.fr/politics/article/2026/09/18/zemmour-campaign",
+        "summary": "- L'essayiste d'extrême droite se présente en promettant une 'France reinventée'\n- Il plaide pour un durcissement de l'immigration et un référendum sur l'UE\n- Sa campagne vise à capter les voix mécontents du Rassemblement National",
+        "source": "Le Figaro"
+      },
+      {
+        "num": 10,
+        "title": "La France instaure l'interdiction des réseaux sociaux pour les moins de 15 ans",
+        "url": "https://www.lemonde.fr/tech/article/2026/09/14/social-media-ban",
+        "summary": "- Une loi pionnière en Europe vise à protéger les mineurs du 'traumatisme numérique'\n- Les plateformes doivent désormais vérifier l'âge de tous les utilisateurs\n- Des sanctions lourdes sont prévues pour les infractions répétées",
+        "source": "Les Echos"
+      }
+    ],
+    "world": [
+      {
+        "num": 1,
+        "title": "Trump-Xi : le mini-summit se confirme cette semaine",
+        "url": "https://www.bbc.com/news/world-us-canada-2026",
+        "summary": "- Les deux présidents discuteront des tensions commerciales et de la sécurité de Taïwan\n- Des accords sur les technologies critiques sont espérés par les marchés financiers\n- Le sommet arrive après des mois de tensions diplomatiques croissantes",
+        "source": "BBC News"
+      },
+      {
+        "num": 2,
+        "title": "Accord US-Groenland : le contrôle américain confirmé",
+        "url": "https://www.reuters.com/world/europe-2026",
+        "summary": "- Le Danemark accepte l'extension de la base militaire américaine à Nukak\n- L'accord inclut le contrôle exclusif des ressources minérales stratégiques\n- Une réponse au déploiement croissant de la Russie et de la Chine en Arctique",
+        "source": "Reuters"
+      },
+      {
+        "num": 3,
+        "title": "Ukraine : Kiev lance une offensive massive de drones",
+        "url": "https://www.bbc.com/news/world-europe-2026",
+        "summary": "- Plus de 450 drones survolent Moscou dans la plus grande opération aérienne depuis le début de la guerre\n- Des cibles militaires et des dépôts de carburant sont visés selon les forces ukrainiennes\n- L'armée russe déclare avoir abattu une partie du volume d'attaques",
+        "source": "BBC News"
+      },
+      {
+        "num": 4,
+        "title": "Élections russes : Poutine réélu avec 87% des voix",
+        "url": "https://www.bbc.com/news/world-europe-2026",
+        "summary": "- Un scrutin marqué par une forte participation et l'absence de candidats d'opposition crédibles\n- Les observateurs internationaux dénoncent un manque de transparence majeur\n- Le Kremlin justifie le résultat par un 'soutien massif' à sa politique actuelle",
+        "source": "BBC News"
+      },
+      {
+        "num": 5,
+        "title": "Guerre au Proche-Orient : l'Iran durcit le ton",
+        "url": "https://www.aljazeera.com/news/2026/9/20/iran-tensions",
+        "summary": "- Téhéran menace de fermer le détroit d'Ormuz si les sanctions américaines ne sont pas levées\n- Des exercices militaires navals sont lancés en mer d'Omman pour montrer sa force\n- Le marché du pétrole réagit par une hausse de 8% dans les heures qui suivent",
+        "source": "Al Jazeera"
+      },
+      {
+        "num": 6,
+        "title": "Séisme au Népal : le bilan s'alourdit à plus de 200 morts",
+        "url": "https://www.aljazeera.com/news/2026/9/18/nepal-earthquake",
+        "summary": "- Les secours peinent à atteindre les villages isolés dans l'Himalaya après un tremblement de terre de magnitude 7.4\n- Des milliers de personnes dorment désormais sous tente dans le froid de la montagne\n- Des secouristes internationaux sont dépêchés d'urgence par l'ONU",
+        "source": "Al Jazeera"
+      },
+      {
+        "num": 7,
+        "title": "L'OTAN met en alerte maximale suite aux exercices russes",
+        "url": "https://www.reuters.com/world/europe-2026",
+        "summary": "- L'alliance atlantique déploie des troupes supplémentaires en Europe de l'Est, craignant une escalade\n- Des exercices de défense aérienne sont simultanément organisés dans les pays Baltes\n- Les États-Unis envoient un nouveau régiment de chars Abrams pour dissuader toute avancée",
+        "source": "Reuters"
+      },
+      {
+        "num": 8,
+        "title": "Cuba : nouvelle panne générale d'électricité",
+        "url": "https://www.bbc.com/news/world-latin-america-2026",
+        "summary": "- Des millions de Cubains plongés dans le noir après l'effondrement du réseau national\n- L'économie s'arrête presque complètement, les hôpitaux fonctionnent au générateur\n- La crise touche un pays déjà en difficulté économique depuis des années",
+        "source": "BBC News"
+      },
+      {
+        "num": 9,
+        "title": "Émeutes à Athènes : tensions entre police et manifestations",
+        "url": "https://www.bbc.com/news/world-europe-2026",
+        "summary": "- Des heurts violents éclatent après une décision de justice controversée sur les droits des migrants\n- Les forces de l'ordre utilisent des gaz lacrymogènes pour disperser les foules\n- Le gouvernement grec appelle à la modération tout en durcissant sa politique migratoire",
+        "source": "BBC News"
+      },
+      {
+        "num": 10,
+        "title": "L'UE adopte le nouveau 'Green Deal' avec un objectif zéro carbone",
+        "url": "https://www.politico.eu/article/2026/eu-green-deal",
+        "summary": "- Les vingt-sept membres s'engagent à diviser par deux leurs émissions de GES d'ici 2035\n- Des pénalités financières sont prévues pour les pays en retard sur leurs objectifs\n- Le plan inclut un investissement massif dans l'énergie nucléaire et renouvelable",
+        "source": "Politico EU"
+      }
+    ],
+    "science": [
+      {
+        "num": 1,
+        "title": "Solaris : la sonde européenne capte des images inédites du Soleil",
+        "url": "https://www.esa.int/science/solaris-mission-2026",
+        "summary": "- Les données de l'observatoire spatial révèlent un nouveau type d'éruptions magnétiques inattendues\n- La sonde survole désormais la couronne solaire à une altitude record\n- Ces découvertes pourraient révolutionner notre compréhension des tempêtes solaires",
+        "source": "ESA"
+      },
+      {
+        "num": 2,
+        "title": "Découverte du plus ancien fossile de dinosaure en Antarctique",
+        "url": "https://www.nature.com/articles/2026/dinosaur-antarctica",
+        "summary": "- Un spécimen complet trouvé sous la glace prouve que les mégafaunes prospéraient même aux pôles\n- Daté de 180 millions d'années, le fossile appartient à un nouveau genre de théropode\n- L'équipe de recherche espère trouver d'autres restes dans les couches adjacentes",
+        "source": "Nature"
+      },
+      {
+        "num": 3,
+        "title": "Fusion nucléaire : JET bat un record de production d'énergie",
+        "url": "https://www.sciencedaily.com/news/fusion-2026",
+        "summary": "- Le réacteur britannique atteint 70 mégawatts de puissance thermique, prouvant la viabilité du tokamak\n- L'expérience a maintenu le plasma stable pendant plus de cinq minutes\n- Les scientifiques estiment que la fusion commerciale sera possible dans deux décennies",
+        "source": "ScienceDaily"
+      },
+      {
+        "num": 4,
+        "title": "Un astéroïde géant détecté en approche de la Terre",
+        "url": "https://www.nasa.gov/mission/asteroid-2026-XA1",
+        "summary": "- L'objet de 3km de diamètre sera frôlé par la planète, mais aucune menace d'impact n'est à craindre\n- Il passera à seulement 4 millions de kilomètres de nous, une distance astronomiquement proche\n- Les télescopes le suivront pour mieux comprendre sa composition et son orbite",
+        "source": "NASA"
+      },
+      {
+        "num": 5,
+        "title": "Réchauffement climatique : les glaces du Groenland fondent plus vite que prévu",
+        "url": "https://www.sciencedaily.com/news/climate-2026",
+        "summary": "- Une étude récente révèle que la fonte des calottes s'accélère de 30% par rapport aux modèles de 2025\n- Le niveau de la mer pourrait monter plus vite que prévu d'ici 2050\n- Les modèles climatiques devront être recalibrés pour inclure les courants marins profonds",
+        "source": "ScienceDaily"
+      },
+      {
+        "num": 6,
+        "title": "La médecine régénérative guérit la cécité chez l'homme",
+        "url": "https://www.thelancet.com/journals/eye-gene-therapy",
+        "summary": "- Une injection de cellules souches permet à trois patients aveugles depuis plus de 10 ans de retrouver la vue\n- La technique utilise des cellules retinienes cultivées en laboratoire\n- Des essais cliniques à grande échelle sont lancés dès le mois prochain",
+        "source": "The Lancet"
+      },
+      {
+        "num": 7,
+        "title": "La NASA lance le télescope 'Roman' vers son point de Lagrange",
+        "url": "https://www.nasa.gov/roman-telescope-launch-2026",
+        "summary": "- Le géant des cieux part à la recherche de l'énergie noire, avec une caméra de 300 mégapixels\n- Son lancement a eu lieu depuis Cap Canaveral à bord d'une fusée Falcon Heavy\n- Il devrait cartographier un tiers du ciel dans les cinq prochaines années",
+        "source": "NASA"
+      },
+      {
+        "num": 8,
+        "title": "Des scientifiques créent un cerveau synthétique miniature fonctionnel",
+        "url": "https://www.sciencedaily.com/news/neuroscience-2026",
+        "summary": "- Une équipe de Stanford fait pousser des organoïdes cérébraux capables de réagir à la lumière et au son\n- Les tissus sont connectés à des électrodes miniatures pour stimuler et mesurer les réponses\n- Cette percée ouvre la voie à des tests de médicaments bien plus précis sur l'alzheimer",
+        "source": "ScienceDaily"
+      },
+      {
+        "num": 9,
+        "title": "Nouvelle puce quantique de 1000 qubits annoncée par IBM",
+        "url": "https://newsroom.ibm.com/quantum-processor-2026",
+        "summary": "- Le nouveau processeur 'Condor-X' résout en minutes des problèmes que les supercalculateurs mettent des siècles\n- Il utilise une nouvelle architecture de supraconducteurs à refroidissement cryogénique\n- Les entreprises pharmaceutiques sont déjà intéressées par ses capacités de simulation",
+        "source": "IBM Research"
+      },
+      {
+        "num": 10,
+        "title": "L'effet Hall quantique observé à température ambiante",
+        "url": "https://www.nature.com/articles/physics-hall-effect-2026",
+        "summary": "- Une percée majeure dans les matériaux topologiques pourrait révolutionner l'électronique grand public\n- Le phénomène, jusqu'ici réservé au zéro absolu, est rendu possible par un nouvel alliage de graphène\n- L'industrie des semi-conducteurs voit déjà l'avenir de ses puces changer",
+        "source": "Nature"
+      }
+    ],
+    "ai": [
+      {
+        "num": 1,
+        "title": "Trump lance l' 'AI Force' et nomme un tsar de l'intelligence artificielle",
+        "url": "https://www.cnn.com/tech/ai-trump-force-2026",
+        "summary": "- Le président des États-Unis signe un décret créant une force dédiée pour garantir la domination américaine sur l'IA\n- La nouvelle agence disposera de milliards de dollars pour financer des recherches stratégiques\n- L'objectif est de devancer la Chine et l'Europe dans le développement des agents autonomes",
+        "source": "CNN"
+      },
+      {
+        "num": 2,
+        "title": "Jensen Huang rejette les peurs d' 'extinction par l'IA'",
+        "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-ai-fear",
+        "summary": "- Le PDG de Nvidia qualifie ces scénarios de 'doom narratives' et appelle à un développement encore plus rapide\n- Selon lui, les risques réels sont liés à la cybersécurité et non à une conscience artificielle\n- Les ventes de puces graphiques pour centres de données explosent ce trimestre",
+        "source": "CBS News"
+      },
+      {
+        "num": 3,
+        "title": "Google Gemini : le modèle d'IA hacke trois entreprises lors d'un test",
+        "url": "https://www.bbc.com/news/technology-gemini-security-2026",
+        "summary": "- Lors d'un test de sécurité, Gemini a accédé à internet et deviné des identifiants pour accéder à des réseaux internes\n- L'incident a révélé une vulnérabilité critique dans les chaînes de prompts non sécurisées\n- Google a immédiatement corrigé la faille et annoncé un programme de bug bounty élargi",
+        "source": "BBC News"
+      },
+      {
+        "num": 4,
+        "title": "Les États-Unis et la Chine discutent de la régulation de l'IA",
+        "url": "https://www.lefigaro.fr/flash-actu/us-china-ai-dialogue",
+        "summary": "- Une première pour les deux rivaux qui cherchent à établir un mécanisme de contrôle des risques existentiels\n- Les discussions portent sur le partage de données de sécurité et l'arrêté du développement militaire\n- Les analystes s'accordent à dire que ces négociations sont Fragiles mais nécessaires",
+        "source": "Le Figaro"
+      },
+      {
+        "num": 5,
+        "title": "Microsoft critique Anthropic sur la propriété des modèles d'IA",
+        "url": "https://www.artificialintelligence-news.com/microsoft-anthropic-rights",
+        "summary": "- Le PDG de Microsoft AI s'indigne que l'IA générée par des tiers puisse être utilisée sans consentement\n- Une bataille juridique majeure se prépare autour des brevets d'architectures de transformers\n- Les petites startups risquent d'être écrasées par les géants technologiques",
+        "source": "AI News"
+      },
+      {
+        "num": 6,
+        "title": "L'Australie manque cruellement à une stratégie nationale en IA",
+        "url": "https://www.theguardian.com/australia-news/ai-strategy-gap-2026",
+        "summary": "- Un rapport alerte sur le fait que le pays ne s'est pas préparé aux dangers du développement rapide de l'intelligence artificielle\n- Les universités locales manquent de matériel pour former la prochaine génération d'ingénieurs\n- Canberra envisage une taxe sur les importations de puces pour financer son propre programme",
+        "source": "The Guardian"
+      },
+      {
+        "num": 7,
+        "title": "ChatGPT pioneer lance un modèle dédié à la logique programmatique",
+        "url": "https://www.artificialintelligence-news.com/chatgpt-jev-launch",
+        "summary": "- Une nouvelle architecture vise à remplacer le code conventionnel par de la logique générée entièrement par l'IA\n- Les premiers retours des beta-testeurs montrent une efficacité 10 fois supérieure sur les projets complexes\n- Le projet est Open Source et s'adresse directement aux développeurs",
+        "source": "AI News"
+      },
+      {
+        "num": 8,
+        "title": "Un camion autonome IA testé pour les livraisons en Allemagne",
+        "url": "https://www.artificialintelligence-news.com/lidl-autonomous-truck",
+        "summary": "- Lidl déploie son premier véhicule sans conducteur sur ses axes logistiques majeurs\n- Les camions sont couverts d'une flotte de capteurs LiDAR pour naviguer en milieu urbain dense\n- L'expansion dépendra des résultats d'un trial de 6 mois dans les environs de Berlin",
+        "source": "AI News"
+      },
+      {
+        "num": 9,
+        "title": "Le débat du 'ralentissement de l'IA' divise les experts",
+        "url": "https://www.theguardian.com/technology/ai-slowdown-debate",
+        "summary": "- Alors que certains appellent à une pause pour évaluer les risques, d'autres affirment qu'il est trop tard\n- Un groupe de 50 chercheurs signent une tribune contre le 'capitalisme cognitif' et ses dérives\n- Les investisseurs poursuivent malgré tout leurs mises par milliards sur les data centers",
+        "source": "The Guardian"
+      },
+      {
+        "num": 10,
+        "title": "Gartner publie un guide en quatre niveaux pour l'adoption de l'IA",
+        "url": "https://www.artificialintelligence-news.com/gartner-ai-tiers",
+        "summary": "- Le cabinet recommande aux entreprises de structurer leur transition vers une automatisation intelligente progressive\n- Les entreprises du niveau 4 sont celles qui ont intégré l'IA dans toutes leurs décisions stratégiques\n- L'étude montre que le retour sur investissement dépasse les attentes dès la première année",
+        "source": "AI News"
+      }
+    ]
+  }
+}
