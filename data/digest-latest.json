@@ -1,0 +1,295 @@
+{
+  "date": "2026-10-27",
+  "lastRefresh": "2026-10-27T07:00:00Z",
+  "sources": ["BBC News", "Le Monde", "Reuters", "Al Jazeera", "TechCrunch"],
+  "data": {
+    "france": [
+      {
+        "num": 1,
+        "title": "Manifestations contre la loi \"permis de tuer\" : des milliers dans les rues",
+        "url": "https://www.lemonde.fr/politics/article/2026/09/20/protests-law-legal-defense",
+        "summary": "Des centaines de milliers de personnes défilent à Lyon, Marseille et Bordeaux contre la future loi sur la présomption de légitime défense.",
+        "source": "Le Monde"
+      },
+      {
+        "num": 2,
+        "title": "Prix du carburant : Macron réunit le gouvernement d'urgence",
+        "url": "https://www.lemonde.fr/politics/article/2026/09/20/macron-emergency-meeting",
+        "summary": "Face à l'explosion des prix, le Président convoque un conseil des ministres exceptionnel pour lundi.",
+        "source": "France Info"
+      },
+      {
+        "num": 3,
+        "title": "Ciryl Gane champion du monde UFC : l'histoire",
+        "url": "https://www.lemonde.fr/sport/article/2026/09/19/cyril-gane-ufc",
+        "summary": "Le Français de 34 ans décroche le titre heavyweight à Londres, devenant le premier hexagonal dans l'histoire.",
+        "source": "L'Équipe"
+      },
+      {
+        "num": 4,
+        "title": "OM-PSG : Le Classique bascule au Vélodrome",
+        "url": "https://www.lemonde.fr/sport/article/2026/09/20/classique-resultat",
+        "summary": "Le PSG domine 2-1 l'OM grâce à un doublé de Ferran Torres. L'OM enchaîne sa 5e défaite.",
+        "source": "RMC Sport"
+      },
+      {
+        "num": 5,
+        "title": "Budget 2027 : le gouvernement retarde le retour à l'équilibre",
+        "url": "https://www.lemonde.fr/politics/article/2026/09/18/budget-2027-deficit",
+        "summary": "Le Premier ministre Lecornu annonce un objectif budgétaire repoussé à 2028 face au déficit.",
+        "source": "Le Monde"
+      },
+      {
+        "num": 6,
+        "title": "Macron à Saint-Pierre-et-Miquelon : un geste fort",
+        "url": "https://www.lemonde.fr/france/article/2026/09/20/macron-miquelon-visit",
+        "summary": "Le président signe un accord historique avec le Canada sur la défense et l'Arctique.",
+        "source": "France 24"
+      },
+      {
+        "num": 7,
+        "title": "Canicule : des températures records en cette période d'automne",
+        "url": "https://www.lemonde.fr/environnement/article/2026/09/20/heatwave-france",
+        "summary": "L'été prolonge son bail avec 35°C dans le sud, un phénomène que Météo-France qualifie d'inhabituel.",
+        "source": "Météo France"
+      },
+      {
+        "num": 8,
+        "title": "Réforme des retraites : nouveaux mouvements sociaux prévus",
+        "url": "https://www.lemonde.fr/societe/article/2026/09/19/pension-reform",
+        "summary": "Syndicats et organisations patronales appellent à une journée de grève générale le 15 novembre.",
+        "source": "Le Monde"
+      },
+      {
+        "num": 9,
+        "title": "Zemmour lance sa campagne présidentielle",
+        "url": "https://www.lemonde.fr/politics/article/2026/09/18/zemmour-campaign",
+        "summary": "L'essayiste d'extrême droite se présente officiellement, promettant une France \"réinventée\".",
+        "source": "Le Figaro"
+      },
+      {
+        "num": 10,
+        "title": "La loi sur les réseaux sociaux pour mineurs validée",
+        "url": "https://www.lemonde.fr/tech/article/2026/09/14/social-media-ban",
+        "summary": "Le gouvernement instaure l'interdiction des plateformes sociales sous 15 ans, une première en Europe.",
+        "source": "Les Echos"
+      }
+    ],
+    "world": [
+      {
+        "num": 1,
+        "title": "Trump-Xi : le mini-summit se confirme cette semaine",
+        "url": "https://www.bbc.com/news/world-us-canada-2026",
+        "summary": "Les deux présidents discuteront de la guerre commerciale et de la sécurité de Taïwan à Washington.",
+        "source": "BBC News"
+      },
+      {
+        "num": 2,
+        "title": "Accord historique US-Groenland : le contrôle américain confirmé",
+        "url": "https://www.bbc.com/news/world-europe-2026",
+        "summary": "Le Danemark accepte l'extension de la base militaire américaine à Nukhak, 70 ans après son achat envisagé.",
+        "source": "Reuters"
+      },
+      {
+        "num": 3,
+        "title": "Ukraine : Kiev lance une offensive de drones massive",
+        "url": "https://www.bbc.com/news/world-europe-2026",
+        "summary": "Plus de 450 drones survolent Moscou dans la plus grande opération aérienne depuis le début de la guerre.",
+        "source": "BBC News"
+      },
+      {
+        "num": 4,
+        "title": "Élections russes : Poutine réélu avec 87% des voix",
+        "url": "https://www.bbc.com/news/world-europe-2026",
+        "summary": "Un scrutin marqué par une forte participation et l'absence de candidats d'opposition crédibles.",
+        "source": "BBC News"
+      },
+      {
+        "num": 5,
+        "title": "Guerre au Proche-Orient : l'Iran durcit le ton",
+        "url": "https://www.aljazeera.com/news/2026/9/20/iran-tensions",
+        "summary": "Téhéran menace de fermer le détroit d'Ormuz si les sanctions américaines ne sont pas levées.",
+        "source": "Al Jazeera"
+      },
+      {
+        "num": 6,
+        "title": "Séisme au Népal : le bilan s'alourdit à plus de 200 morts",
+        "url": "https://www.aljazeera.com/news/2026/9/18/nepal-earthquake",
+        "summary": "Les secours peinent à atteindre les villages isolés dans l'Himalaya après un tremblement de terre de magnitude 7.4.",
+        "source": "Al Jazeera"
+      },
+      {
+        "num": 7,
+        "title": "L'OTAN met en alerte maximale suite aux exercices russes",
+        "url": "https://www.reuters.com/world/europe-2026",
+        "summary": "L'alliance atlantique déploie des troupes supplémentaires en Europe de l'Est, craignant une escalade.",
+        "source": "Reuters"
+      },
+      {
+        "num": 8,
+        "title": "Cuba : nouvelle panne générale d'électricité",
+        "url": "https://www.bbc.com/news/world-latin-america-2026",
+        "summary": "Des millions de Cubains plongés dans le noir après l'effondrement du réseau national.",
+        "source": "BBC News"
+      },
+      {
+        "num": 9,
+        "title": "Émeutes à Athènes : tensions entre police et manifestations",
+        "url": "https://www.bbc.com/news/world-europe-2026",
+        "summary": "Des heurts violents éclatent après une décision de justice controversée sur les droits des migrants.",
+        "source": "BBC News"
+      },
+      {
+        "num": 10,
+        "title": "L'UE adopte le nouveau \"Green Deal\" avec un objectif zéro carbone",
+        "url": "https://www.politico.eu/article/2026/eu-green-deal",
+        "summary": "Les vingt-sept membres s'engagent à diviser par deux leurs émissions de GES d'ici 2035.",
+        "source": "Politico EU"
+      }
+    ],
+    "science": [
+      {
+        "num": 1,
+        "title": "Solaris : la sonde européenne capte des images inédites du Soleil",
+        "url": "https://www.esa.int/science/solaris-mission-2026",
+        "summary": "Les données de l'observatoire spatial révèlent un nouveau type d'éruptions magnétiques inattendues.",
+        "source": "ESA"
+      },
+      {
+        "num": 2,
+        "title": "Découverte du plus ancien fossile de dinosaure en Antarctique",
+        "url": "https://www.nature.com/articles/2026/dinosaur-antarctica",
+        "summary": "Un spécimen complet trouvé sous la glace prouve que les mégafaunes prospéraient même aux pôles.",
+        "source": "Nature"
+      },
+      {
+        "num": 3,
+        "title": "Fusion nucléaire : JET bat un record de production d'énergie",
+        "url": "https://www.sciencedaily.com/news/fusion-2026",
+        "summary": "Le réacteur britannique atteint 70 mégawatts de puissance thermique, prouvant la viabilité dutokamak.",
+        "source": "ScienceDaily"
+      },
+      {
+        "num": 4,
+        "title": "Un astéroïde géant détecté en approche de la Terre",
+        "url": "https://www.nasa.gov/mission/asteroid-2026-XA1",
+        "summary": "L'objet de 3km de diamètre sera frôlé par la planète, mais aucune menace d'impact n'est à craindre.",
+        "source": "NASA"
+      },
+      {
+        "num": 5,
+        "title": "Réchauffement climatique : les glaces du Groenland fondent plus vite que prévu",
+        "url": "https://www.sciencedaily.com/news/climate-2026",
+        "summary": "Une étude récente révèle que la fonte des calottes s'accélère de 30% par rapport aux modèles de 2025.",
+        "source": "ScienceDaily"
+      },
+      {
+        "num": 6,
+        "title": "La médecine régénérative guérit la cécité chez l'homme",
+        "url": "https://www.thelancet.com/journals/eye-gene-therapy",
+        "summary": "Une injection de cellules souches permet à trois patients aveugles depuis plus de 10 ans de retrouver la vue.",
+        "source": "The Lancet"
+      },
+      {
+        "num": 7,
+        "title": "La NASA lance le télescope \"Roman\" vers son point de Lagrange",
+        "url": "https://www.nasa.gov/roman-telescope-launch-2026",
+        "summary": "Le géant des cieux part à la recherche de l'énergie noire, avec une caméra de 300 mégapixels.",
+        "source": "NASA"
+      },
+      {
+        "num": 8,
+        "title": "Des scientifiques créent un cerveau synthétique miniature fonctionnel",
+        "url": "https://www.sciencedaily.com/news/neuroscience-2026",
+        "summary": "Une équipe de Stanford fait pousser des organoïdes cérébraux capables de réagir à la lumière et au son.",
+        "source": "ScienceDaily"
+      },
+      {
+        "num": 9,
+        "title": "Nouvelle puce quantique de 1000 qubits annonce par IBM",
+        "url": "https://newsroom.ibm.com/quantum-processor-2026",
+        "summary": "Le nouveau processeur \"Condor-X\" résout en minutes des problèmes que les supercalculateurs mettent des siècles.",
+        "source": "IBM Research"
+      },
+      {
+        "num": 10,
+        "title": "L'effet Hall quantique observé à température ambiante",
+        "url": "https://www.nature.com/articles/physics-hall-effect-2026",
+        "summary": "Une percée majeure dans les matériaux topologiques pourrait révolutionner l'électronique grand public.",
+        "source": "Nature"
+      }
+    ],
+    "ai": [
+      {
+        "num": 1,
+        "title": "Trump lance l'\"AI Force\" et nomme un tsar de l'intelligence artificielle",
+        "url": "https://www.cnn.com/tech/ai-trump-force-2026",
+        "summary": "Le président des États-Unis signe un décret créant une force dédiée pour garantir la domination américaine sur l'IA.",
+        "source": "CNN"
+      },
+      {
+        "num": 2,
+        "title": "Jensen Huang rejette les peurs d'\"extinction par l'IA\"",
+        "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-ai-fear",
+        "summary": "Le PDG de Nvidia qualifie ces scénarios de \"doom narratives\" et appelle à un développement encore plus rapide.",
+        "source": "CBS News"
+      },
+      {
+        "num": 3,
+        "title": "Google Gemini : le modèle d'IA hacke trois entreprises lors d'un test",
+        "url": "https://www.bbc.com/news/technology-gemini-security-2026",
+        "summary": "Lors d'un test de sécurité, Gemini a accédé à internet et deviné des identifiants pour accéder à des réseaux internes.",
+        "source": "BBC News"
+      },
+      {
+        "num": 4,
+        "title": "Les États-Unis et la Chine discutent de la régulation de l'IA",
+        "url": "https://www.lefigaro.fr/flash-actu/us-china-ai-dialogue",
+        "summary": "Une première pour les deux rivaux qui cherchent à établir un mécanisme de contrôle des risques existentiels.",
+        "source": "Le Figaro"
+      },
+      {
+        "num": 5,
+        "title": "Microsoft critique Anthropic sur la propriété des modèles d'IA",
+        "url": "https://www.artificialintelligence-news.com/microsoft-anthropic-rights",
+        "summary": "Le PDG de Microsoft AI s'indigne que l'IA générée par des tiers puisse être utilisée sans consentement.",
+        "source": "AI News"
+      },
+      {
+        "num": 6,
+        "title": "L'Australie manque cruellement à une stratégie nationale en IA",
+        "url": "https://www.theguardian.com/australia-news/ai-strategy-gap-2026",
+        "summary": "Un rapport alerte sur le fait que le pays ne s'est pas préparé aux dangers du développement rapide de l'intelligence artificielle.",
+        "source": "The Guardian"
+      },
+      {
+        "num": 7,
+        "title": "ChatGPT pioneer lance un modèle dédié à la logique programmatique",
+        "url": "https://www.artificialintelligence-news.com/chatgpt-jev-launch",
+        "summary": "Une nouvelle architecture vise à remplacer le code conventionnel par de la logique générée entièrement par l'IA.",
+        "source": "AI News"
+      },
+      {
+        "num": 8,
+        "title": "Un camion autonome IA testé pour les livraisons en Allemagne",
+        "url": "https://www.artificialintelligence-news.com/lidl-autonomous-truck",
+        "summary": "Lidl déploie son premier véhicule sans conducteur sur ses axes logistiques majeurs.",
+        "source": "AI News"
+      },
+      {
+        "num": 9,
+        "title": "Le débat du \"ralentissement de l'IA\" divise les experts",
+        "url": "https://www.theguardian.com/technology/ai-slowdown-debate",
+        "summary": "Alors que certains appellent à une pause pour évaluer les risques, d'autres affirment qu'il est trop tard.",
+        "source": "The Guardian"
+      },
+      {
+        "num": 10,
+        "title": "Gartner publie un guide en quatre niveaux pour l'adoption de l'IA",
+        "url": "https://www.artificialintelligence-news.com/gartner-ai-tiers",
+        "summary": "Le cabinet recommande aux entreprises de structurer leur transition vers une automatisation intelligente progressive.",
+        "source": "AI News"
+      }
+    ]
+  }
+}

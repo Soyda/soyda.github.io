@@ -4,3 +4,8 @@ _site/
 .jekyll-cache/
 .DS_Store
 *.log
+
+# AI agent instructions (not for public repos)
+**/CLAUDE.md
+**/.llm/**
+**/AGENTS.md

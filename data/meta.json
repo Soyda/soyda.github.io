@@ -1,0 +1,9 @@
+{
+  "siteName": "Daily News Digest — Soyda",
+  "categories": [
+    { "id": "france", "title": "Top 10 French News", "emoji": "🇫🇷" },
+    { "id": "world", "title": "Top 10 World News", "emoji": "🌍" },
+    { "id": "science", "title": "Top 10 Science & Tech", "emoji": "🔬" },
+    { "id": "ai", "title": "Top 10 AI & ML News", "emoji": "🤖" }
+  ]
+}
