@@ -334,6 +334,20 @@ img { max-width: 100%; height: auto; }
 .nav-links a:hover, .nav-links a.active { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 
 /* =============================================
+   DISCLAIMER BANNER — demo-content notice
+   ============================================= */
+.disclaimer-banner {
+  background: var(--tag-bg);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: .78rem;
+  text-align: center;
+  padding: var(--space-xs) var(--space-md);
+  line-height: 1.6;
+}
+.disclaimer-banner strong { color: var(--text); }
+
+/* =============================================
    BUTTONS — Terminal style (square edges)
    ============================================= */
 .btn {
@@ -440,6 +454,11 @@ img { max-width: 100%; height: auto; }
   font-size: .9rem; transition: all var(--transition);
 }
 .contact-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); text-decoration: none; }
+
+.contact-link.is-disabled {
+  color: var(--text-muted); opacity: .55; cursor: not-allowed; pointer-events: none;
+}
+.contact-link.is-disabled:hover { border-color: var(--border); color: var(--text-muted); transform: none; box-shadow: none; }
 
 /* =============================================
    ABOUT PAGE — Terminal session style
