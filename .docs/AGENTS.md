@@ -1,131 +1,164 @@
-# Automated Daily News Digest — Agent Workflow & Prompt
+# Agent Workflow Guide — soyda.github.io
 
-**Repository:** `soyda.github.io`  
-**Working Directory:** `/home/user/soyda.github.io`  
-**Branch Strategy:** `main` is always deployable. Use `feat/digest-update` for digest work.  
-**Commit Convention:** `chore(digest): update daily news for YYYY-MM-DD`
+**Internal docs for AI agents working on this repository.**  
+Not part of the public site. Do not include in commits that affect production without review.
 
 ---
 
-## 📋 MANDATORY: Pre-flight Repo Review
+## 🚨 MANDATORY: Pre-flight Repo Review (Every Task)
 
-Before doing anything, the agent MUST inspect the current repo state:
+**Before doing ANY work**, inspect the full repo state. Never assume — read files.
 
 ```bash
-# 1. File structure & current data
-ls -la /home/user/soyda.github.io/data/
-cat /home/user/soyda.github.io/data/meta.json
-head -c 500 /home/user/soyda.github.io/data/digest-latest.json
+# 1. Structure & data
+cd /home/user/soyda.github.io
+find . -not -path './.git/*' -not -path './node_modules/*' -type f | sort
+cat data/meta.json
+head -c 300 data/digest-latest.json
 
-# 2. HTML page structures (DO NOT assume — read them)
-cat /home/user/soyda.github.io/index.html          # verify digest section exists
-cat /home/user/soyda.github.io/digest.html           # verify full digest table structure
-cat /home/user/soyda.github.io/js/digest-loader.js   # understand data consumption logic
+# 2. Key files — READ them (never assume content)
+cat index.html
+cat digest.html
+cat js/digest-loader.js
+cat styles.css        # check for existing class names you'll need
 
 # 3. Git state
-cd /home/user/soyda.github.io && git status && git log --oneline -5
+git status --short
+git log --oneline -10
+git branch --show-current
+git remote -v
 ```
 
-**Save the current digest to archive:**  
-`cp data/digest-latest.json data/archive/YYYY-MM-DD.json` (create archive dir first if missing)
-
----
-
-## 📋 MANDATORY: Tasklist — Execute & Check Off Every Item
-
-The agent MUST create and complete this tasklist. No task is skipped.
-
-```
-[ ] T1: Fetch fresh news for all 4 categories from live web sources
-[ ] T2: Compile Top 10 per category (10 articles x 4 = 40 total)
-[ ] T3: Format summaries as compact inline bullets (• point · • point · • point)
-[ ] T4: Write updated digest-latest.json with correct JSON structure
-[ ] T5: Verify digest.html will render correctly with the new data format
-[ ] T6: Verify index.html news preview cards work with the new data format
-[ ] T7: Validate all URLs are valid, working links (no dead/placeholder URLs)
-[ ] T8: Commit & push with conventional commit message
+**Always save the current digest to archive before overwriting:**
+```bash
+mkdir -p data/archive && cp data/digest-latest.json "data/archive/$(date +%Y-%m-%d).json"
 ```
 
 ---
 
-## 📋 Execution Plan
+## 📋 MANDATORY: Tasklist Pattern (Every Session)
 
-### Phase 1 — Research & Compile (T1–T2)
+**Create a tasklist at the start of every multi-step session.** Check off every item before finishing.
 
-Research today's date and fetch news from these categories using live sources:
-
-| Category | Focus | Suggested Sources |
-|----------|-------|-------------------|
-| `france` 🇫🇷 | French national/domestic politics, society, culture, economy | Le Monde (English), France 24, AP News France, Le Figaro |
-| `world` 🌍 | Global/international breaking news, geopolitics | BBC News World, Reuters, Al Jazeera, The Guardian World, AP News |
-| `science` 🔬 | Science breakthroughs, space, physics, biology, climate | NASA Science, SciTechDaily, Nature, New Scientist, ESA |
-| `ai` 🤖 | AI/ML developments, policy, industry, research | Stanford HAI AI Index, TechCrunch AI, The Guardian AI, OpenAI Blog |
-
-**Requirements for each story:**
-- `num`: 1–10 (ranking by relevance/recency)
-- `title`: concise headline (< 80 chars)
-- `url`: real, verifiable URL to the original article (HTTPS)
-- `summary`: **compact inline bullets** — short bullet points joined with • as shown below
-- `source`: name of the news outlet (e.g., "BBC News", "TechCrunch")
-
-### Phase 2 — Summary Formatting Rule (T3)
-
-SUMMARIES MUST use this exact format:
 ```
-• Short key point one sentence. · • Another key point, different angle. · • Third supporting detail.
+[ ] T1: <description>
+[ ] T2: <description>
+...
 ```
 
-Rules:
-- Each bullet starts with `• ` (Unicode bullet + space)
-- Separated by ` · ` for compact inline display
-- 2–4 bullet points per summary maximum
-- No multi-line newlines inside summary values
-- Total summary length: 80–160 characters
-- Bullet fragments must be complete thoughts, not fragments
+**Check off tasks as completed.** Never skip. Never assume something is done — verify it.
 
-### Phase 3 — Data Output (T4)
+---
 
-Write `digest-latest.json` with this EXACT structure:
+## Git Branch Strategy
 
+```bash
+# Main branch is always deployable
+git checkout main
+
+# Feature work:
+git checkout -b feat/<short-description>
+git add .
+git commit -m "feat: brief description"
+git push origin feat/<short-description>
+```
+
+**Commit messages follow Conventional Commits:**
+
+| Prefix    | Meaning                    | Example                          |
+|-----------|----------------------------|----------------------------------|
+| `feat:`   | New feature                | `feat: add dark mode`            |
+| `fix:`    | Bug fix                    | `fix: missing script tag`        |
+| `refactor:` | Code change, no behavior change | `refactor: simplify loader` |
+| `chore:`  | Build/infra/maintenance    | `chore(digest): update news`     |
+| `docs:`   | Documentation              | `docs: update AGENTS.md`         |
+
+---
+
+## 🏗️ Repo Architecture (What Each File Does)
+
+### Data Layer (SINGLE SOURCE OF TRUTH)
+
+| File | Role |
+|------|------|
+| `data/digest-latest.json` | **Master data** — 40 stories (10 per category). Consumed by JS loader. |
+| `data/meta.json` | Category metadata: `{id, title, emoji}` for each section. |
+| `data/archive/YYYY-MM-DD.json` | Historical snapshots of digest-latest.json. |
+
+### Page Layer
+
+| File | Role |
+|------|------|
+| `index.html` | Homepage with 4 `.news-card` preview slots (top story per category) → links to `digest.html`. |
+| `digest.html` | Full page with tabular view of all 40 stories, split into 4 sections. |
+| `js/digest-loader.js` | **Only script that loads data.** Fetches JSON+meta at runtime, populates BOTH index cards AND digest tables. |
+
+### Key Rule: **Never manually edit HTML for content changes.** All dynamic content flows through `digest-latest.json`. Only modify HTML structure when adding/removing sections.
+
+### Styles
+
+| File | Role |
+|------|------|
+| `styles.css` | All styling. Use existing class names (`news-card`, `digest-bullet-list`, etc.). |
+| `theme.js` | Theme cycling (gray/navy light/dark). |
+
+---
+
+## 🔄 Daily Digest Workflow (Template)
+
+This is the repeatable pattern for updating the news digest:
+
+### Phase 1 — Research & Compile
+1. Get today's date (ISO `YYYY-MM-DD`).
+2. Search live web sources across 4 categories:
+   - `france` 🇫🇷 → Le Monde, France 24, AP News
+   - `world` 🌍 → BBC World, Reuters, Al Jazeera, The Guardian
+   - `science` 🔬 → NASA, SciTechDaily, Nature, ESA
+   - `ai` 🤖 → Stanford HAI AI Index, TechCrunch AI, OpenAI Blog
+3. Compile top 10 per category (40 total) by relevance/recency.
+
+### Phase 2 — Summary Format Rule (STRICT)
+Every summary MUST be **compact inline bullets**, single line:
+```
+• Short point one sentence. · • Another point with different angle. · • Third supporting detail.
+```
+Rules: `• ` as bullet prefix, ` · ` as separator, 2-4 points per summary, no newlines, 80-160 chars total.
+
+### Phase 3 — Write JSON (Exact Structure)
 ```json
 {
   "date": "YYYY-MM-DD",
   "lastRefresh": "2026-XX-XXT07:00:00Z",
-  "sources": ["Top 5 news outlets used for curation"],
+  "sources": ["Top 5 outlets"],
   "data": {
-    "france": [ { "num": 1, "title": "...", "url": "...", "summary": "• ... · • ... · • ...", "source": "..." } ],
-    "world": [ ... 10 stories same structure ... ],
-    "science": [ ... 10 stories same structure ... ],
-    "ai": [ ... 10 stories same structure ... ]
+    "france": [{"num":1,"title":"...","url":"https://...","summary":"• ... · • ...","source":"..."}],
+    "world": [...],
+    "science": [...],
+    "ai": [...]
   }
 }
 ```
 
-### Phase 4 — HTML & JS Verification (T5–T7)
+### Phase 4 — Verify Compatibility (MANDATORY)
+Before committing, verify the data format works with BOTH pages:
 
-The agent MUST verify that the digest data format is compatible with:
+**For digest.html tables:**
+- `summary.split(' • ')` must produce bullet strings for `<ul><li>` rendering
+- All fields: num, title, url (HTTPS), summary, source present
 
-**`index.html`** (preview cards on homepage):
-- Loads via `digest-loader.js` from `${basePath}data/digest-latest.json`
-- Shows first story (`data[cat][0]`) per category in `.news-card` elements
-- Strips `• ...` bullets for display: `summary.split('• ').map(s => s.trim()).filter(Boolean).slice(0,2).join(' — ')`
-- Links to `digest.html#${categoryId}`
+**For index.html preview cards:**
+- `summary.split('• ')` → filter(Boolean) → slice(0,2).join(' — ') produces valid preview text
+- First story exists in each category array
 
-**`digest.html`** (full table view):
-- Loads via `digest-loader.js`, splits bullets with `.split('\u2022 ')` for table display
-- Shows all 10 stories in tabular format per category
+**Validation checklist:**
+```bash
+python3 -c "import json; d=json.load(open('data/digest-latest.json')); assert sum(len(v) for v in d['data'].values()) == 40; print('OK')"
+```
 
-**`js/digest-loader.js`**:
-- Already handles bullet parsing — NO changes needed unless JSON schema changes
-- Verifies it reads `${basePath}data/meta.json` for category metadata
-
-### Phase 5 — Archive & Commit (T8)
-
+### Phase 5 — Commit & Push
 ```bash
 cd /home/user/soyda.github.io
-mkdir -p data/archive
-cp data/digest-latest.json "data/archive/$(date +%Y-%m-%d).json"
-
+mkdir -p data/archive && cp data/digest-latest.json "data/archive/$(date +%Y-%m-%d).json"
 git add data/archive/*.json data/digest-latest.json
 git commit -m "chore(digest): update daily news for YYYY-MM-DD"
 git push origin $(git branch --show-current)
@@ -133,37 +166,110 @@ git push origin $(git branch --show-current)
 
 ---
 
-## ⚠️ Quality Gate Checklist
+## 📂 Theme Development Guide
 
-Before committing, verify ALL of these:
+### Color System (4 themes, built on CSS custom properties)
 
-- [ ] JSON is valid (parseable with `python3 -c "import json; json.load(open('data/digest-latest.json'))"`)
-- [ ] Exactly 40 stories total (10 per category × 4)
-- [ ] All `num` fields are sequential 1–10 within each category
-- [ ] All `url` values are HTTPS and non-empty
-- [ ] No summary contains `\n` (newlines — must be compact inline bullets)
-- [ ] Sources array has exactly 5 outlets
-- [ ] Date matches today's date in YYYY-MM-DD format
-- [ ] Archive copy exists for the previous day
+| Theme | Mode |
+|-------|------|
+| `theme-gray` | Light (default) |
+| `theme-gray-dark` | Dark mode |
+| `theme-navy-light` | Blue-tinted light |
+| `theme-navy-dark` | Blue-tinted dark |
 
----
+**Every theme MUST define:** `--bg`, `--surface`, `--text`, `--text-muted`, `--accent`, `--accent-hover`, `--border`, `--tag-bg`, `--nav-bg`, `--shadow`, `--radius`
 
-## 📂 Repo Reference: Key Files & Their Roles
-
-| File | Role |
-|------|------|
-| `data/digest-latest.json` | Master data file — 40 stories, consumed by JS loader |
-| `data/meta.json` | Category metadata (id, title, emoji) — feeds section titles |
-| `js/digest-loader.js` | Fetches JSON + meta, populates both index.html preview cards AND digest.html tables |
-| `index.html` | Homepage with 4 `.news-card` preview slots for top stories |
-| `digest.html` | Dedicated page with full tabular view of all 40 stories |
-| `styles.css` | All shared styling — new items must use existing CSS classes |
+### Adding a New Theme
+1. Add CSS rule block with all tokens in `styles.css`
+2. Add to `THEMES` array in `theme.js`
+3. Test manually in all 4 modes + responsive
 
 ---
 
-## 🔄 Maintenance Notes
+## ⚠️ Quality Gate Checklist (Pre-Commit)
 
-- **Never edit index.html or digest.html manually for data** — they are generated by `digest-loader.js` from the JSON. Only update HTML structure/JS logic if needed.
-- **The JSON data file is the single source of truth.** All content updates go through `digest-latest.json`.
-- **Always backup old data to archive before overwriting.**
-- **Keep URLs authoritative** — prefer outlet's own domain, not aggregators or mirror sites.
+Before every commit:
+- [ ] JSON valid (`python3 -c "import json; json.load(open('file.json'))"`)
+- [ ] All URLs are HTTPS and non-empty
+- [ ] No summary contains `\n` or raw dashes
+- [ ] Theme works in all 4 modes
+- [ ] Responsive on mobile (375px)
+- [ ] Semantic HTML (`<main>`, `<section>`, `<article>`)
+- [ ] No broken links or empty sections
+- [ ] Commit uses conventional format
+- [ ] All tasklist items checked off
+
+---
+
+## 📐 Content Templates
+
+### New Project Card (for index.html)
+```html
+<article class="project-card">
+  <div class="card-header">
+    <span class="repo-badge"><svg ...>public</svg></span>
+    <a href="https://github.com/..." class="card-title-link">repo-name</a>
+  </div>
+  <p>Description.</p>
+  <div class="project-footer">
+    <span class="language-dot" style="--dot-color: #color"></span>
+    <span class="lang-name">Language</span>
+    <span class="spacer"></span>
+    <svg ...>star icon</svg>
+  </div>
+</article>
+```
+
+### New HTML Page Template
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title — Soyda</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,...">
+</head>
+<body class="theme-gray">
+  <nav class="navbar">...</nav>
+  <main class="container"><h1>Title</h1></main>
+  <footer class="site-footer">...</footer>
+  <script src="js/digest-loader.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
+```
+
+---
+
+## 🚫 Anti-Patterns (Never Do These)
+
+1. **Hardcode content in HTML** — always use JSON data layer
+2. **Skip repo review** — always read key files before changing them
+3. **Skip tasklist** — always create and complete tasks explicitly
+4. **Assume git auth works** — verify remote URL and credentials before push
+5. **Commit without validation** — run checks before every commit
+6. **Edit digest-latest.json by hand** — use structured JSON tools
+
+---
+
+## 🔧 Quick Reference: Git Commands
+
+```bash
+# Check current state
+cd /home/user/soyda.github.io && git status --short && git branch --show-current && git remote -v
+
+# Create feature branch
+git checkout -b feat/<description>
+
+# Stage & commit
+git add .
+git commit -m "feat: description"
+
+# Push
+git push origin $(git branch --show-current)
+
+# Switch back to main (after merging PR)
+git checkout main && git pull origin main
+```
