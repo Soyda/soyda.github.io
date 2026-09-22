@@ -1,11 +1,12 @@
 (async () => {
-  // Determine if we are on digest.html or index.html
   const isDigestPage = window.location.pathname.includes('digest.html');
+  const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
 
   try {
+    console.log('Digest Loader: Fetching data...');
     const [metaRes, dataRes] = await Promise.all([
-      fetch('./data/meta.json'),
-      fetch('./data/digest-latest.json')
+      fetch(`${basePath}data/meta.json`),
+      fetch(`${basePath}data/digest-latest.json`)
     ]);
 
     if (!metaRes.ok || !dataRes.ok) throw new Error('Data files not found.');
@@ -37,18 +38,24 @@
         heroActions.appendChild(anchor);
       });
 
-      // Populate Tables
+      // Populate Tables with inline bullet summaries
       meta.categories.forEach(cat => {
         const tbody = document.getElementById(`body-${cat.id}`);
         const stories = data.data[cat.id] || [];
-        
+
         let tableRows = '';
         stories.forEach(story => {
+          // Split inline bullets (• point · • point) into styled HTML list
+          const bullets = story.summary.split(' • ').filter(Boolean);
+          const formattedSummary = bullets.length > 1
+            ? `<ul class="digest-bullet-list">${bullets.map(b => `<li>${b.trim()}</li>`).join('')}</ul>`
+            : `<span>${story.summary}</span>`;
+
           tableRows += `
             <tr>
               <td class="col-num">${story.num}</td>
               <td class="col-title"><a href="${story.url}" target="_blank" rel="noopener" class="digest-link">${story.title}</a></td>
-              <td class="col-summary">${story.summary}</td>
+              <td class="col-summary">${formattedSummary}</td>
               <td class="col-source">${story.source}</td>
             </tr>`;
         });
@@ -74,10 +81,18 @@
         const container = document.getElementById(`preview-${cat.id}`);
         if (container && data.data[cat.id] && data.data[cat.id].length > 0) {
           const story = data.data[cat.id][0]; // Get the #1 story
+          // Strip inline bullets for the compact index preview
+          const shortSummary = story.summary
+            .split('• ')
+            .map(s => s.trim())
+            .filter(Boolean)
+            .slice(0, 2)   // take at most first 2 points
+            .join(' — ');  // join with dash for inline display
+
           container.innerHTML = `
             <div class="news-badge">${cat.emoji} ${cat.id.charAt(0).toUpperCase() + cat.id.slice(1)}</div>
             <a href="digest.html#${cat.id}" class="news-title">${story.title}</a>
-            <p class="news-excerpt">$ ${story.summary}</p>
+            <p class="news-excerpt">$ ${shortSummary}</p>
           `;
         }
       });

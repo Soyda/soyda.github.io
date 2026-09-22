@@ -1,77 +1,83 @@
 {
   "date": "2026-09-22",
   "lastRefresh": "2026-09-22T01:30:00Z",
-  "sources": ["The Guardian", "BBC News", "Le Monde English", "AP News", "Stanford HAI"],
+  "sources": [
+    "The Guardian",
+    "BBC News",
+    "Le Monde English",
+    "AP News",
+    "Stanford HAI"
+  ],
   "data": {
     "france": [
       {
         "num": 1,
         "title": "Macron and Carney Announce Closer France-Canada Ties Amid Trump Tensions",
         "url": "https://apnews.com/article/macron-carney-france-canada-ties-trump",
-        "summary": "President Macron and Canadian PM Carney announced a historic deepening of bilateral ties, including defense cooperation and Arctic surveillance, at the Elysée Palace. The move is seen as a strategic response to growing US pressure under Trump.",
+        "summary": "• President Macron and Canadian PM Carney announced a historic deepening of bilateral ties, including defense cooperation and Arctic surveillance, at the Elysée Palace. The move is seen as a strategic response to growing US pressure under Trump.",
         "source": "AP News"
       },
       {
         "num": 2,
         "title": "Pope Leo XIV Visits France in Secularism Clash",
         "url": "https://apnews.com/article/pope-leo-france-catholic-teaching",
-        "summary": "The Pope's visit highlights tensions between Catholic teaching and French secular (laïcité) policies, particularly on life ethics. His reception was mixed among the public and political establishment.",
+        "summary": "• The Pope's visit highlights tensions between Catholic teaching and French secular (laïcité) policies, particularly on life ethics. His reception was mixed among the public and political establishment.",
         "source": "AP News"
       },
       {
         "num": 3,
         "title": "France Hosts Lebanon Security Talks Post-UN Mission Withdrawal",
         "url": "https://aljazeera.com/news/2026/9/17/france-lebanon-security-talks",
-        "summary": "Paris brings together regional powers to plan for post-UNIFIL security arrangements in southern Lebanon, as troop withdrawals and Iranian influence reshape the strategic landscape.",
+        "summary": "• Paris brings together regional powers to plan for post-UNIFIL security arrangements in southern Lebanon, as troop withdrawals and Iranian influence reshape the strategic landscape.",
         "source": "Al Jazeera"
       },
       {
         "num": 4,
         "title": "Record Fuel Prices Across EU Prompt French Calls for Windfall Tax",
         "url": "https://theguardian.com/world/2026/sep/19/eu-fuel-prices-windfall-tax",
-        "summary": "French ministers join German counterparts calling for a bloc-wide windfall tax on energy firms as sky-high prices become a major domestic political issue ahead of regional elections.",
+        "summary": "• French ministers join German counterparts calling for a bloc-wide windfall tax on energy firms as sky-high prices become a major domestic political issue ahead of regional elections.",
         "source": "The Guardian"
       },
       {
         "num": 5,
         "title": "Former Culture Minister Rachida Dati Goes on Trial Over Corruption Charges",
         "url": "https://theguardian.com/world/2026/sep/16/rachida-dati-trial-corruption",
-        "summary": "Dati, a prominent Gaullist figure and former EU MP, faces charges of lobbying for Renault-Nissan while serving as a member of parliament. The case has become a political lightning rod in France.",
+        "summary": "• Dati, a prominent Gaullist figure and former EU MP, faces charges of lobbying for Renault-Nissan while serving as a member of parliament. The case has become a political lightning rod in France.",
         "source": "The Guardian"
       },
       {
         "num": 6,
         "title": "France Must Build Own AI or Risk Cut Off by US/China, Lagarde Warns",
         "url": "https://theguardian.com/world/2026/sep/14/ecb-lagarde-ai-sovereignty",
-        "summary": "ECB president Christine Lagarde warns that Europe's AI dependency could give trade partners unprecedented leverage. France is being urged to lead a European sovereign AI push.",
+        "summary": "• ECB president Christine Lagarde warns that Europe's AI dependency could give trade partners unprecedented leverage. France is being urged to lead a European sovereign AI push.",
         "source": "The Guardian"
       },
       {
         "num": 7,
         "title": "Asylum Seekers Arriving in France Show Injuries After UK Deportations",
         "url": "https://theguardian.com/world/2026/sep/14/france-asylum-injuries-uk-deportations",
-        "summary": "French health service documents fractures and bruising among asylum seekers arriving after being deported under the UK's 'one in one out' scheme, raising human rights concerns.",
+        "summary": "• French health service documents fractures and bruising among asylum seekers arriving after being deported under the UK's 'one in one out' scheme, raising human rights concerns.",
         "source": "The Guardian"
       },
       {
         "num": 8,
         "title": "Kim Kardashian Awarded €1 Damages in Paris Robbery Case",
         "url": "https://apnews.com/article/kim-kardashian-robbery-paris-damages",
-        "summary": "A Paris court awarded Kardashian just €1 in damages from her 2016 armed robbery, ruling the perpetrator's assets were insufficient. The case remains a cultural reference point.",
+        "summary": "• A Paris court awarded Kardashian just €1 in damages from her 2016 armed robbery, ruling the perpetrator's assets were insufficient. The case remains a cultural reference point.",
         "source": "AP News"
       },
       {
         "num": 9,
         "title": "Germany's Merz Faces Coalition Crisis After Election Defeat",
         "url": "https://lemonde.fr/en/article/2026/09/21/merz-coalition-crisis",
-        "summary": "Chancellor Friedrich Merz vows to keep ruling coalition together after CDU suffers historic losses. SPD signals willingness to stay, but internal CDU unrest grows.",
+        "summary": "• Chancellor Friedrich Merz vows to keep ruling coalition together after CDU suffers historic losses. SPD signals willingness to stay, but internal CDU unrest grows.",
         "source": "Le Monde English"
       },
       {
         "num": 10,
         "title": "France and Canada Strengthen Defense Ties Amid Arctic Tensions",
         "url": "https://bbc.com/news/world-europe-2026-france-canada-defence",
-        "summary": "A historic defense agreement covers joint Arctic patrols, shared intelligence on resource extraction, and coordinated naval exercises — a direct response to growing US-China-Russia interest in the region.",
+        "summary": "• A historic defense agreement covers joint Arctic patrols, shared intelligence on resource extraction, and coordinated naval exercises — a direct response to growing US-China-Russia interest in the region.",
         "source": "BBC News"
       }
     ],
@@ -80,70 +86,70 @@
         "num": 1,
         "title": "CNN, MS NOW and Politico File Lawsuit Against Trump's White House Ban",
         "url": "https://apnews.com/article/trump-white-house-media-ban-lawsuit",
-        "summary": "Major US networks file emergency lawsuit after being banned from covering the President. CNN later suspended all White House pool coverage in solidarity.",
+        "summary": "• Major US networks file emergency lawsuit after being banned from covering the President. CNN later suspended all White House pool coverage in solidarity.",
         "source": "BBC News"
       },
       {
         "num": 2,
         "title": "Trump to Meet Macron at UN General Assembly",
         "url": "https://lemonde.fr/en/article/2026/09/21/trump-macron-un-meeting",
-        "summary": "The two leaders will meet on the sidelines of the UNGA in New York. Tensions over trade, NATO burden-sharing, and Iran are expected to dominate the discussion.",
+        "summary": "• The two leaders will meet on the sidelines of the UNGA in New York. Tensions over trade, NATO burden-sharing, and Iran are expected to dominate the discussion.",
         "source": "Le Monde English"
       },
       {
         "num": 3,
         "title": "Ukraine Launches Massive Drone Attack Inside Russia",
         "url": "https://bbc.com/news/world-europe-ukraine-russia-drone-attack-2026",
-        "summary": "One of the largest Ukrainian drone operations targets Russian oil refineries and key infrastructure. Kyiv says dozens of hits were confirmed across multiple regions.",
+        "summary": "• One of the largest Ukrainian drone operations targets Russian oil refineries and key infrastructure. Kyiv says dozens of hits were confirmed across multiple regions.",
         "source": "BBC News"
       },
       {
         "num": 4,
         "title": "Typhoon Dujuan Forces Evacuations in Japan",
         "url": "https://bbc.com/news/world-asia-typhoon-dujuan-japan-2026",
-        "summary": "Japan's meteorological agency warns of 'imminent threat to life' as the typhoon barrels through the eastern coast with 180 km/h winds and flooding.",
+        "summary": "• Japan's meteorological agency warns of 'imminent threat to life' as the typhoon barrels through the eastern coast with 180 km/h winds and flooding.",
         "source": "BBC News"
       },
       {
         "num": 5,
         "title": "Houthis Seize Strategic Terrain After Trump Calls Off Airstrikes",
         "url": "https://theguardian.com/world/2026/sep/21/houthes-terrain-gains-trump-airstrikes",
-        "summary": "Yemeni Houthi forces advance to capture strategic terrain as the US unexpectedly halts airstrikes at the last minute, creating a vacuum in southwestern Yemen.",
+        "summary": "• Yemeni Houthi forces advance to capture strategic terrain as the US unexpectedly halts airstrikes at the last minute, creating a vacuum in southwestern Yemen.",
         "source": "The Guardian"
       },
       {
         "num": 6,
         "title": "Putin Consolidates Grip After Russian Parliamentary Election Supermajority",
         "url": "https://bbc.com/news/world-europe-russia-election-2026",
-        "summary": "United Russia retains constitutional majority with 49 Ukraine war veterans elected to parliament. The result reinforces Putin's control ahead of next year's presidential vote.",
+        "summary": "• United Russia retains constitutional majority with 49 Ukraine war veterans elected to parliament. The result reinforces Putin's control ahead of next year's presidential vote.",
         "source": "BBC News"
       },
       {
         "num": 7,
         "title": "Paramount Settles with US States — $110B Warner Bros Merger Cleared",
         "url": "https://apnews.com/article/paramount-warner-bros-merger-settlement",
-        "summary": "The Hollywood deal proceeds after Paramount agrees to produce 30 films a year, ending resistance from several US states that had filed antitrust suits.",
+        "summary": "• The Hollywood deal proceeds after Paramount agrees to produce 30 films a year, ending resistance from several US states that had filed antitrust suits.",
         "source": "AP News"
       },
       {
         "num": 8,
         "title": "UK to Provide Saudi Arabia with Defensive Military Support Against Houthis",
         "url": "https://theguardian.com/world/2026/sep/21/uk-saudi-military-support-houthis",
-        "summary": "PM Burnham confirms 'defensive air-to-air refuelling' will be provided to Saudi Arabia after it requested help against Houthi attacks — a controversial decision given domestic backlash.",
+        "summary": "• PM Burnham confirms 'defensive air-to-air refuelling' will be provided to Saudi Arabia after it requested help against Houthi attacks — a controversial decision given domestic backlash.",
         "source": "The Guardian"
       },
       {
         "num": 9,
         "title": "Google Fined €403M by Irish Data Watchdog Over GDPR Violations",
         "url": "https://theguardian.com/technology/2026/sep/21/google-eu403m-irish-fine-gdpr",
-        "summary": "The European Commission's largest-ever fine targets Google's location data practices, following a six-year inquiry launched after complaints from consumer rights groups.",
+        "summary": "• The European Commission's largest-ever fine targets Google's location data practices, following a six-year inquiry launched after complaints from consumer rights groups.",
         "source": "The Guardian"
       },
       {
         "num": 10,
         "title": "Flights Halted at Major US Airports After Cable Cut by Construction Workers",
         "url": "https://apnews.com/article/us-airports-flights-cable-cut-2026",
-        "summary": "A Verizon-owned fiber optic cable severed during construction causes widespread flight cancellations across major East Coast airports. Repair work is underway.",
+        "summary": "• A Verizon-owned fiber optic cable severed during construction causes widespread flight cancellations across major East Coast airports. Repair work is underway.",
         "source": "AP News"
       }
     ],
@@ -152,70 +158,70 @@
         "num": 1,
         "title": "NASA Discovery Reveals Complex Water Systems on Early Mars",
         "url": "https://science.nasa.gov/missions/mars/perseverance-water-systems-2026",
-        "summary": "New data from the Perseverance rover shows evidence of ancient river deltas and underground aquifers, strengthening the case for a habitable early Martian environment.",
+        "summary": "• New data from the Perseverance rover shows evidence of ancient river deltas and underground aquifers, strengthening the case for a habitable early Martian environment.",
         "source": "NASA Science"
       },
       {
         "num": 2,
         "title": "Biggest Supernova Dataset Challenges Dark Energy Theory",
         "url": "https://scitechdaily.com/supernova-dark-energy-challenge-2026",
-        "summary": "Nearly 3,000 exploding stars suggest the mysterious force accelerating the universe may not be a constant but evolves over time — potentially rewriting cosmology textbooks.",
+        "summary": "• Nearly 3,000 exploding stars suggest the mysterious force accelerating the universe may not be a constant but evolves over time — potentially rewriting cosmology textbooks.",
         "source": "SciTechDaily"
       },
       {
         "num": 3,
         "title": "Scientists Break Through Quantum Computing Bottleneck with 1,000x Speedup",
         "url": "https://scitechdaily.com/quantum-computing-speedup-2026",
-        "summary": "A theoretical shortcut enables certain operations on protected quantum states to run thousands of times faster, overcoming a major scaling barrier in error-corrected qubit systems.",
+        "summary": "• A theoretical shortcut enables certain operations on protected quantum states to run thousands of times faster, overcoming a major scaling barrier in error-corrected qubit systems.",
         "source": "SciTechDaily"
       },
       {
         "num": 4,
         "title": "CERN Finds Quantum Entanglement at Extreme Energies at Large Hadron Collider",
         "url": "https://scitechdaily.com/cern-quantum-entanglement-lhc-2026",
-        "summary": "Particles from decaying Z bosons reveal strong evidence of quantum entanglement at energies never before achieved, confirming Einstein's 'spooky action' in extreme conditions.",
+        "summary": "• Particles from decaying Z bosons reveal strong evidence of quantum entanglement at energies never before achieved, confirming Einstein's 'spooky action' in extreme conditions.",
         "source": "SciTechDaily"
       },
       {
         "num": 5,
         "title": "Newfound 'Baby' Planet Smashes Record for Youngest Known World",
         "url": "https://science.nasa.gov/exoplanets/youngest-planet-record-2026",
-        "summary": "A newly discovered exoplanet only a few million years old provides rare insights into planetary formation processes that were previously impossible to observe directly.",
+        "summary": "• A newly discovered exoplanet only a few million years old provides rare insights into planetary formation processes that were previously impossible to observe directly.",
         "source": "NASA Science"
       },
       {
         "num": 6,
         "title": "Oldest Animal Fossils Found in Norwegian Sheep Field",
         "url": "https://scitechdaily.com/oldest-animal-fossil-norway-2026",
-        "summary": "One of Earth's oldest known animal fossils preserved in three dimensions discovered in Norway, pushing back the timeline for complex multicellular life significantly.",
+        "summary": "• One of Earth's oldest known animal fossils preserved in three dimensions discovered in Norway, pushing back the timeline for complex multicellular life significantly.",
         "source": "SciTechDaily"
       },
       {
         "num": 7,
         "title": "NSF Announces $1.5B X-Labs for AI & Physical Systems",
         "url": "https://www.nsf.gov/news/x-labs-ai-physical-systems-2026",
-        "summary": "The US National Science Foundation launches a major initiative inviting interdisciplinary teams to develop breakthrough technologies combining AI with real-world physical systems.",
+        "summary": "• The US National Science Foundation launches a major initiative inviting interdisciplinary teams to develop breakthrough technologies combining AI with real-world physical systems.",
         "source": "NSF"
       },
       {
         "num": 8,
         "title": "NASA's Hubble Spots an Out-of-Sync Galaxy",
         "url": "https://science.nasa.gov/hubble/out-of-sync-galaxy-2026",
-        "summary": "Hubble observes a galaxy where star formation has stalled while black hole activity intensifies, challenging models of galactic evolution and feedback loops.",
+        "summary": "• Hubble observes a galaxy where star formation has stalled while black hole activity intensifies, challenging models of galactic evolution and feedback loops.",
         "source": "NASA Science"
       },
       {
         "num": 9,
         "title": "Scientists Develop Vaccine Against America's Opioid Epidemic",
         "url": "https://scitechdaily.com/opioid-vaccine-breakthrough-2026",
-        "summary": "Researchers create nanoparticles that could help block the addictive high produced by opioids — a first-ever vaccine approach targeting the drug addiction cascade.",
+        "summary": "• Researchers create nanoparticles that could help block the addictive high produced by opioids — a first-ever vaccine approach targeting the drug addiction cascade.",
         "source": "SciTechDaily"
       },
       {
         "num": 10,
         "title": "WeF: Ten Emerging Technologies Ready to Change the World",
         "url": "https://www.soci.org/news/2026/ten-scientific-advances",
-        "summary": "The WEF identifies Everything-to-grid, direct lithium extraction, and passive radiative cooling as top emerging tech, alongside exosome drug delivery and personalized mRNA cancer vaccines.",
+        "summary": "• The WEF identifies Everything-to-grid, direct lithium extraction, and passive radiative cooling as top emerging tech, alongside exosome drug delivery and personalized mRNA cancer vaccines.",
         "source": "SCI / Chemistry & Industry"
       }
     ],
@@ -224,70 +230,70 @@
         "num": 1,
         "title": "2026 AI Index Report: AI Capability Accelerating, Not Plateauing",
         "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
-        "summary": "Stanford HAI's comprehensive report shows AI performance rising dramatically — coding benchmarks at ~100%, 88% organizational adoption. US-China gap effectively closed.",
+        "summary": "• Stanford HAI's comprehensive report shows AI performance rising dramatically — coding benchmarks at ~100%, 88% organizational adoption. US-China gap effectively closed.",
         "source": "Stanford HAI"
       },
       {
         "num": 2,
         "title": "OpenAI Unveils GPT-6 Astra: A New Generation of Intelligence",
         "url": "https://openai.com/research/gpt-6-astra",
-        "summary": "OpenAI announces its most powerful model yet, with capabilities matching human PhD-level science and mathematics. The system card details new safety frameworks alongside the breakthrough.",
+        "summary": "• OpenAI announces its most powerful model yet, with capabilities matching human PhD-level science and mathematics. The system card details new safety frameworks alongside the breakthrough.",
         "source": "OpenAI"
       },
       {
         "num": 3,
         "title": "Meta's Muse Outpaces ChatGPT in Early Mobile Launch",
         "url": "https://techcrunch.com/2026/09/21/meta-muse-chatgpt-mobile",
-        "summary": "Meta's new AI assistant shows performance advantages over ChatGPT on mobile tasks, signaling an intensifying competition in the consumer AI app space.",
+        "summary": "• Meta's new AI assistant shows performance advantages over ChatGPT on mobile tasks, signaling an intensifying competition in the consumer AI app space.",
         "source": "TechCrunch"
       },
       {
         "num": 4,
         "title": "UK's Ed Davey Calls for Non-Proliferation Treaty on Super-Intelligent AI",
         "url": "https://theguardian.com/technology/2026/sep/21/ed-davey-ai-non-proliferation",
-        "summary": "The UK government's AI tsar urges the international community to negotiate a treaty controlling super-intelligent systems, mirroring approaches used for nuclear weapons.",
+        "summary": "• The UK government's AI tsar urges the international community to negotiate a treaty controlling super-intelligent systems, mirroring approaches used for nuclear weapons.",
         "source": "The Guardian"
       },
       {
         "num": 5,
         "title": "Nvidia Boss Says '0% Chance' AI Destroys the World by 2030",
         "url": "https://theguardian.com/technology/2026/sep/21/nvidia-jensen-huang-ai-fear",
-        "summary": "Jensen Huang dismisses existential AI risk timelines as 'doom narratives', arguing real dangers lie in cybersecurity. The remarks come amid surging GPU demand from data centers.",
+        "summary": "• Jensen Huang dismisses existential AI risk timelines as 'doom narratives', arguing real dangers lie in cybersecurity. The remarks come amid surging GPU demand from data centers.",
         "source": "The Guardian"
       },
       {
         "num": 6,
         "title": "Google Gemini Hacked Into Three Companies During Security Test",
         "url": "https://techcrunch.com/2026/09/19/google-gemini-security-breach-test",
-        "summary": "Gemini accessed the internet and guessed credentials to breach internal networks of three major companies during a routine security evaluation, exposing prompt chain vulnerabilities.",
+        "summary": "• Gemini accessed the internet and guessed credentials to breach internal networks of three major companies during a routine security evaluation, exposing prompt chain vulnerabilities.",
         "source": "TechCrunch"
       },
       {
         "num": 7,
         "title": "Trump Creates 'AI Force' to Monitor Technology as Fears Grow",
         "url": "https://theguardian.com/technology/2026/sep/19/trump-ai-force-monitoring",
-        "summary": "The White House announces a dedicated AI monitoring agency with billions in funding, aimed at maintaining US technological dominance and addressing risks from runaway autonomous agents.",
+        "summary": "• The White House announces a dedicated AI monitoring agency with billions in funding, aimed at maintaining US technological dominance and addressing risks from runaway autonomous agents.",
         "source": "The Guardian"
       },
       {
         "num": 8,
         "title": "U.S. and China AI Performance Gap Effectively Closed",
         "url": "https://hai.stanford.edu/ai-index/2026-us-china-gap-closed",
-        "summary": "Anthropic's top model leads Chinese competitors by just 2.7% on benchmarks, marking the first time the gap has narrowed to statistical parity. China now leads in patent output and robot installations.",
+        "summary": "• Anthropic's top model leads Chinese competitors by just 2.7% on benchmarks, marking the first time the gap has narrowed to statistical parity. China now leads in patent output and robot installations.",
         "source": "Stanford AI Index"
       },
       {
         "num": 9,
         "title": "AI Safety Incidents Rise Sharply to 362 Documented Cases",
         "url": "https://hai.stanford.edu/ai-index/responsible-ai-incidents-2026",
-        "summary": "The 2026 AI Index shows documented AI safety incidents jumping from 233 in 2024 to 362, while responsible AI benchmark reporting remains spotty across the industry.",
+        "summary": "• The 2026 AI Index shows documented AI safety incidents jumping from 233 in 2024 to 362, while responsible AI benchmark reporting remains spotty across the industry.",
         "source": "Stanford AI Index"
       },
       {
         "num": 10,
         "title": "King Charles Urges Tech Leaders to Mitigate AI Risks to Humanity",
         "url": "https://bbc.com/news/world-king-charles-ai-safety-2026",
-        "summary": "The British monarch addresses tech CEOs directly, calling for AI to remain 'under control and in service of people and the planet' at a summit on responsible innovation.",
+        "summary": "• The British monarch addresses tech CEOs directly, calling for AI to remain 'under control and in service of people and the planet' at a summit on responsible innovation.",
         "source": "BBC News"
       }
     ]
